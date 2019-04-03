@@ -7,21 +7,26 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using DataAccessLayer;
 
 namespace AirportMSystem
 {
-    public partial class Login : Form
+    public partial class IndexSecurity : Form
     {
-        public Login()
+        public IndexSecurity()
         {
             InitializeComponent();
         }
-        private void girisBtn_Click(object sender, EventArgs e)
+
+        private void cikisBtn_Click(object sender, EventArgs e)
         {
-            Kontrol_Et dataAccessLayer = new Kontrol_Et();
-            
-            IndexSecurity yeni = new IndexSecurity();
+            Login yeni = new Login();
+            yeni.Show();
+            this.Hide();
+        }
+
+        private void logoutBtn_Click(object sender, EventArgs e)
+        {
+            Login yeni = new Login();
             yeni.Show();
             this.Hide();
         }

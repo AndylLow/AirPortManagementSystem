@@ -40,7 +40,7 @@
             // 
             this.emailTxt.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.emailTxt.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.HistoryList;
-            this.emailTxt.Location = new System.Drawing.Point(317, 135);
+            this.emailTxt.Location = new System.Drawing.Point(276, 133);
             this.emailTxt.Name = "emailTxt";
             this.emailTxt.Size = new System.Drawing.Size(268, 22);
             this.emailTxt.TabIndex = 0;
@@ -48,7 +48,7 @@
             // emailLbl
             // 
             this.emailLbl.AutoSize = true;
-            this.emailLbl.Location = new System.Drawing.Point(253, 135);
+            this.emailLbl.Location = new System.Drawing.Point(170, 133);
             this.emailLbl.Name = "emailLbl";
             this.emailLbl.Size = new System.Drawing.Size(42, 17);
             this.emailLbl.TabIndex = 1;
@@ -57,7 +57,7 @@
             // passwordLbl
             // 
             this.passwordLbl.AutoSize = true;
-            this.passwordLbl.Location = new System.Drawing.Point(226, 198);
+            this.passwordLbl.Location = new System.Drawing.Point(170, 198);
             this.passwordLbl.Name = "passwordLbl";
             this.passwordLbl.Size = new System.Drawing.Size(69, 17);
             this.passwordLbl.TabIndex = 2;
@@ -65,7 +65,7 @@
             // 
             // passwordTxt
             // 
-            this.passwordTxt.Location = new System.Drawing.Point(317, 198);
+            this.passwordTxt.Location = new System.Drawing.Point(276, 198);
             this.passwordTxt.Name = "passwordTxt";
             this.passwordTxt.Size = new System.Drawing.Size(268, 22);
             this.passwordTxt.TabIndex = 3;
@@ -73,25 +73,28 @@
             // 
             // girisBtn
             // 
-            this.girisBtn.Location = new System.Drawing.Point(362, 278);
+            this.girisBtn.BackColor = System.Drawing.Color.Salmon;
+            this.girisBtn.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.girisBtn.Location = new System.Drawing.Point(368, 269);
             this.girisBtn.Name = "girisBtn";
-            this.girisBtn.Size = new System.Drawing.Size(75, 23);
+            this.girisBtn.Size = new System.Drawing.Size(75, 35);
             this.girisBtn.TabIndex = 4;
-            this.girisBtn.Text = "Giriş";
-            this.girisBtn.UseVisualStyleBackColor = true;
+            this.girisBtn.Text = "Log in";
+            this.girisBtn.UseVisualStyleBackColor = false;
             this.girisBtn.Click += new System.EventHandler(this.girisBtn_Click);
             // 
             // headingLbl
             // 
             this.headingLbl.AutoSize = true;
-            this.headingLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.headingLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.headingLbl.ForeColor = System.Drawing.Color.DarkBlue;
             this.headingLbl.Location = new System.Drawing.Point(167, 41);
             this.headingLbl.Name = "headingLbl";
-            this.headingLbl.Size = new System.Drawing.Size(504, 36);
+            this.headingLbl.Size = new System.Drawing.Size(529, 36);
             this.headingLbl.TabIndex = 5;
             this.headingLbl.Text = "AIRPORT MANAGEMENT SYSTEM";
             // 
-            // Form1
+            // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -102,7 +105,7 @@
             this.Controls.Add(this.passwordLbl);
             this.Controls.Add(this.emailLbl);
             this.Controls.Add(this.emailTxt);
-            this.Name = "Form1";
+            this.Name = "Login";
             this.Text = "Airport Management System";
             this.ResumeLayout(false);
             this.PerformLayout();
