@@ -19,11 +19,12 @@ namespace AirportMSystem
         }
         private void girisBtn_Click(object sender, EventArgs e)
         {
-            Kontrol_Et dataAccessLayer = new Kontrol_Et();
-            
-            IndexSecurity yeni = new IndexSecurity();
-            yeni.Show();
-            this.Hide();
+           
+            if (Kontrol_Et.checkUser(emailTxt.Text, passwordTxt.Text)) {
+                IndexAdmin yeni = new IndexAdmin();
+                yeni.Show();
+                this.Hide();
+            }
         }
     }
 }

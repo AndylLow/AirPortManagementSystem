@@ -10,25 +10,11 @@ using System.Windows.Forms;
 
 namespace AirportMSystem
 {
-    public partial class IndexSecurity : Form
+    public partial class IndexAdmin : Form
     {
-        public IndexSecurity()
+        public IndexAdmin()
         {
             InitializeComponent();
-        }
-
-        private void cikisBtn_Click(object sender, EventArgs e)
-        {
-            Login yeni = new Login();
-            yeni.Show();
-            this.Hide();
-        }
-
-        private void logoutBtn_Click(object sender, EventArgs e)
-        {
-            Login yeni = new Login();
-            yeni.Show();
-            this.Hide();
         }
     }
 }

@@ -10,22 +10,27 @@ namespace DataAccessLayer
 {
     public class Kontrol_Et
     {
-        static SQLiteConnection conn = new SQLiteConnection(@"Data Source=C:\Users\portr\Source\Repos\AndylLow\AirPortManagementSystem\AirportMSystem\DataAccessLayer\AirPortManagementSystem.db;");
-        static SQLiteCommand cmd = new SQLiteCommand(conn);
+        
         public static bool checkUser(string email,string password)
         {
             bool result = false;
             try
             {
+                SQLiteConnection conn = new SQLiteConnection("Data Source=D:\\AirPortManagementSystem.db;");
+                SQLiteCommand cmd = new SQLiteCommand(conn);
                 conn.Open();
-                
+                cmd.CommandText=string.Format("Select * from Users where email='{0}' and password='{1}'",email,password);
+                SQLiteDataAdapter da = new SQLiteDataAdapter(cmd);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+                if (dt.Rows.Count > 0) result = true;
+                conn.Close();
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-
-                throw;
+                throw new Exception("check user error "+ ex.Source+" "+ ex.StackTrace);
             }
-            return false;
+            return result;
         }
     }
 }

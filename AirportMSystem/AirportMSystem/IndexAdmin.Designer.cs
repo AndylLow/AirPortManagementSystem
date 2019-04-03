@@ -1,6 +1,6 @@
 ﻿namespace AirportMSystem
 {
-    partial class IndexSecurity
+    partial class IndexAdmin
     {
         /// <summary>
         /// Required designer variable.
@@ -28,38 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
-            
             this.SuspendLayout();
             // 
-            // logoutBtn
+            // IndexAdmin
             // 
-            
-            // 
-            // IndexSecurity
-            // 
-            this.ClientSize = new System.Drawing.Size(804, 450);
-            
-            this.Name = "IndexSecurity";
-            this.Text = "Security";
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Name = "IndexAdmin";
+            this.Text = "Admin";
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Button cikisBtn;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button logoutBtn;
     }
 }
