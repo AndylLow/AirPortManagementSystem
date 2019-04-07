@@ -8,7 +8,7 @@ using System.Data.SQLite;
 
 namespace DataAccessLayer
 {
-    public class Kontrol_Et
+    public static class Kontrol_Et
     {
         
         public static bool checkUser(string email,string password)
@@ -16,7 +16,9 @@ namespace DataAccessLayer
             bool result = false;
             try
             {
-                SQLiteConnection conn = new SQLiteConnection("Data Source=D:\\AirPortManagementSystem.db;");
+                SQLiteConnection conn;
+                conn=new SQLiteConnection(@"Data Source=C:\Users\portr\source\repos\AndylLow\AirPortManagementSystem\AirportMSystem\DataAccessLayer\AirPortManagementSystem.db;");
+                
                 SQLiteCommand cmd = new SQLiteCommand(conn);
                 conn.Open();
                 cmd.CommandText=string.Format("Select * from Users where email='{0}' and password='{1}'",email,password);
