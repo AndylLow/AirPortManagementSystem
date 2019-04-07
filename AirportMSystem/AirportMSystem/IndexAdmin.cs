@@ -16,5 +16,12 @@ namespace AirportMSystem
         {
             InitializeComponent();
         }
+
+        private void logoutBtn_Click(object sender, EventArgs e)
+        {
+            Login yeni = new Login();
+            yeni.Show();
+            this.Close();
+        }
     }
 }

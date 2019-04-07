@@ -37,6 +37,10 @@
             this.passwordLbl = new System.Windows.Forms.Label();
             this.employeeTypeLbl = new System.Windows.Forms.Label();
             this.employeeBox = new System.Windows.Forms.ComboBox();
+            this.idTxt = new System.Windows.Forms.TextBox();
+            this.nameTxt = new System.Windows.Forms.TextBox();
+            this.emailTxt = new System.Windows.Forms.TextBox();
+            this.passwordTxt = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // logoutBtn
@@ -47,6 +51,7 @@
             this.logoutBtn.TabIndex = 0;
             this.logoutBtn.Text = "Log out";
             this.logoutBtn.UseVisualStyleBackColor = true;
+            this.logoutBtn.Click += new System.EventHandler(this.logoutBtn_Click);
             // 
             // removeUserBtn
             // 
@@ -122,11 +127,43 @@
             this.employeeBox.Size = new System.Drawing.Size(178, 24);
             this.employeeBox.TabIndex = 8;
             // 
+            // idTxt
+            // 
+            this.idTxt.Location = new System.Drawing.Point(353, 62);
+            this.idTxt.Name = "idTxt";
+            this.idTxt.Size = new System.Drawing.Size(178, 22);
+            this.idTxt.TabIndex = 9;
+            // 
+            // nameTxt
+            // 
+            this.nameTxt.Location = new System.Drawing.Point(353, 106);
+            this.nameTxt.Name = "nameTxt";
+            this.nameTxt.Size = new System.Drawing.Size(178, 22);
+            this.nameTxt.TabIndex = 10;
+            // 
+            // emailTxt
+            // 
+            this.emailTxt.Location = new System.Drawing.Point(353, 156);
+            this.emailTxt.Name = "emailTxt";
+            this.emailTxt.Size = new System.Drawing.Size(178, 22);
+            this.emailTxt.TabIndex = 11;
+            // 
+            // passwordTxt
+            // 
+            this.passwordTxt.Location = new System.Drawing.Point(353, 200);
+            this.passwordTxt.Name = "passwordTxt";
+            this.passwordTxt.Size = new System.Drawing.Size(178, 22);
+            this.passwordTxt.TabIndex = 12;
+            // 
             // IndexAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.passwordTxt);
+            this.Controls.Add(this.emailTxt);
+            this.Controls.Add(this.nameTxt);
+            this.Controls.Add(this.idTxt);
             this.Controls.Add(this.employeeBox);
             this.Controls.Add(this.employeeTypeLbl);
             this.Controls.Add(this.passwordLbl);
@@ -154,5 +191,9 @@
         private System.Windows.Forms.Label passwordLbl;
         private System.Windows.Forms.Label employeeTypeLbl;
         private System.Windows.Forms.ComboBox employeeBox;
+        private System.Windows.Forms.TextBox idTxt;
+        private System.Windows.Forms.TextBox nameTxt;
+        private System.Windows.Forms.TextBox emailTxt;
+        private System.Windows.Forms.TextBox passwordTxt;
     }
 }
