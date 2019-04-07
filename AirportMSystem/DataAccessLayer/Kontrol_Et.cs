@@ -17,7 +17,7 @@ namespace DataAccessLayer
             try
             {
                 SQLiteConnection conn;
-                conn=new SQLiteConnection(@"Data Source=C:\Users\portr\source\repos\AndylLow\AirPortManagementSystem\AirportMSystem\DataAccessLayer\AirPortManagementSystem.db;");
+                conn=new SQLiteConnection(@"Data Source=C:\Users\portr\OneDrive\Masaüstü\deneme.db;");
                 
                 SQLiteCommand cmd = new SQLiteCommand(conn);
                 conn.Open();
