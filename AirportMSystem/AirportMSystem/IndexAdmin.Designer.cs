@@ -41,6 +41,7 @@
             this.nameTxt = new System.Windows.Forms.TextBox();
             this.emailTxt = new System.Windows.Forms.TextBox();
             this.passwordTxt = new System.Windows.Forms.TextBox();
+            this.viewLogBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // logoutBtn
@@ -55,7 +56,7 @@
             // 
             // removeUserBtn
             // 
-            this.removeUserBtn.Location = new System.Drawing.Point(473, 330);
+            this.removeUserBtn.Location = new System.Drawing.Point(495, 330);
             this.removeUserBtn.Name = "removeUserBtn";
             this.removeUserBtn.Size = new System.Drawing.Size(118, 75);
             this.removeUserBtn.TabIndex = 1;
@@ -155,11 +156,21 @@
             this.passwordTxt.Size = new System.Drawing.Size(178, 22);
             this.passwordTxt.TabIndex = 12;
             // 
+            // viewLogBtn
+            // 
+            this.viewLogBtn.Location = new System.Drawing.Point(353, 330);
+            this.viewLogBtn.Name = "viewLogBtn";
+            this.viewLogBtn.Size = new System.Drawing.Size(116, 75);
+            this.viewLogBtn.TabIndex = 13;
+            this.viewLogBtn.Text = "View Logs";
+            this.viewLogBtn.UseVisualStyleBackColor = true;
+            // 
             // IndexAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.viewLogBtn);
             this.Controls.Add(this.passwordTxt);
             this.Controls.Add(this.emailTxt);
             this.Controls.Add(this.nameTxt);
@@ -195,5 +206,6 @@
         private System.Windows.Forms.TextBox nameTxt;
         private System.Windows.Forms.TextBox emailTxt;
         private System.Windows.Forms.TextBox passwordTxt;
+        private System.Windows.Forms.Button viewLogBtn;
     }
 }
