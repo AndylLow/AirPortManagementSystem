@@ -16,6 +16,7 @@ namespace DataAccessLayer
             bool result = false;
             try
             {
+
                 SQLiteConnection conn;
                 conn=new SQLiteConnection(@"Data Source=C:\Users\portr\OneDrive\Masaüstü\deneme.db;");
                 
