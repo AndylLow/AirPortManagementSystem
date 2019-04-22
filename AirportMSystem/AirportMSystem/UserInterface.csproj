@@ -64,17 +64,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IndexAdmin.cs">
+    <Compile Include="IndexGeneral.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="IndexAdmin.Designer.cs">
-      <DependentUpon>IndexAdmin.cs</DependentUpon>
-    </Compile>
-    <Compile Include="IndexSecurity.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="IndexSecurity.Designer.cs">
-      <DependentUpon>IndexSecurity.cs</DependentUpon>
+    <Compile Include="IndexGeneral.Designer.cs">
+      <DependentUpon>IndexGeneral.cs</DependentUpon>
     </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -84,11 +78,8 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="IndexAdmin.resx">
-      <DependentUpon>IndexAdmin.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="IndexSecurity.resx">
-      <DependentUpon>IndexSecurity.cs</DependentUpon>
+    <EmbeddedResource Include="IndexGeneral.resx">
+      <DependentUpon>IndexGeneral.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>

@@ -10,18 +10,21 @@ using System.Windows.Forms;
 
 namespace AirportMSystem
 {
-    public partial class IndexAdmin : Form
+    public partial class IndexGeneral : Form
     {
-        public IndexAdmin()
+        public IndexGeneral()
         {
             InitializeComponent();
         }
 
-        private void logoutBtn_Click(object sender, EventArgs e)
+        private void hostHostessToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Login yeni = new Login();
-            yeni.Show();
-            this.Close();
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

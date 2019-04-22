@@ -21,7 +21,7 @@ namespace AirportMSystem
         {
            
             if (Kontrol_Et.checkUser(emailTxt.Text, passwordTxt.Text)) {
-                IndexAdmin yeni = new IndexAdmin();
+                IndexGeneral yeni = new IndexGeneral();
                 yeni.Show();
                 this.Hide();
             }
