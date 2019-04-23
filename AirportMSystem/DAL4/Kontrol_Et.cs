@@ -12,6 +12,12 @@ namespace DAL4
 {
     public class Kontrol_Et
     {
+
+        /* Yapılacaklar ---
+         * Class'lara özel data tabloları oluşturulup buradaki "Görüntüle" metodu ona göre düzenlenecek.
+         * Ara yüz sorguları, eklemeler, güncellemeler eklenecek.*/
+
+
         static string executable;
         static string path;
         static string connectionString;
@@ -38,10 +44,10 @@ namespace DAL4
                 cmd.CommandText = "select Id,NAMEFULL,Email,EmployeeType,Privilige from users where EmployeeType =2";
             if(s is Hostess)
                 cmd.CommandText = "select Id,NAMEFULL,Email,EmployeeType,Privilige from users where EmployeeType =4";
-            //if(s is HavaKontrol)
-                //TO BE IMPLEMENTED
-            //if(s is CargoMan)
-                //TO BE IMPLEMENTED
+            if(s is HavaKontrol)
+                cmd.CommandText = "select * from flights";
+            if(s is CargoMan)
+                cmd.CommandText = "select * from cargoes";
             SQLiteDataAdapter da = new SQLiteDataAdapter(cmd);
             da.Fill(dt);
             return dt;
@@ -52,20 +58,60 @@ namespace DAL4
             {
                 // IMPLEMENT TO ADD DATA BASE. AND RETURN THEM WITH PROPER VALUES. 
                 conn.Open();
-                cmd.CommandText = string.Format("Select EmployeeType from Users where email='{0}'", email);
+                cmd.CommandText = string.Format("Select * from Users where email='{0}'", email);
                 SQLiteDataReader reader = cmd.ExecuteReader();
-                reader.Read();
-                int deger = int.Parse(reader.GetValue(0).ToString());
+                Employee oluşan = new Employee();
+                int deger=2;
+                if (reader.Read()) {
+
+                    oluşan.Privilige = int.Parse(reader["privilige"].ToString());
+                    oluşan.Password= reader["password"].ToString();
+                    oluşan.ID1 = int.Parse(reader["ID"].ToString());
+                    oluşan.FullName = reader["NAMEFULL"].ToString();
+                    deger = int.Parse(reader["EmployeeType"].ToString());
+                }
+                oluşan.Email = email;
+                oluşan.Type = deger;
                 reader.Close();
                 conn.Close();
-                if (deger == 0) return new Admin();
-                if (deger == 1) return new Security();
-                if (deger == 2) return new Staff();
-                if (deger == 3) return new Danışma();
-                if (deger == 4) return new Hostess();
-                if (deger == 5) return new HavaKontrol();
-                if (deger == 6) return new CargoMan();
-                else return null;
+
+                if (deger == 0)
+                {
+                    Admin a1 = new Admin(oluşan);
+                    return a1;
+                }
+                if (deger == 1)
+                {
+                    Security a1 = new Security(oluşan);
+                    return a1;
+                }
+                if (deger == 2)
+                {
+                    Staff a1 = new Staff(oluşan);
+                    return a1;
+                }
+                if (deger == 3)
+                {
+                    Danışma a1 = new Danışma(oluşan);
+                    return a1;
+                }
+                if (deger == 4)
+                {
+                    Hostess a1 = new Hostess(oluşan);
+                    return a1;
+                }
+                if (deger == 5)
+                {
+                    HavaKontrol a1 = new HavaKontrol(oluşan);
+                    return a1;
+                }
+                if (deger == 6)
+                {
+                    CargoMan a1 = new CargoMan(oluşan);
+                    return a1;
+                }
+
+                return oluşan;
             }
             catch (Exception)
             {

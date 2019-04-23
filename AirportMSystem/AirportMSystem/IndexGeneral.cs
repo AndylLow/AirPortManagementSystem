@@ -1,13 +1,6 @@
 ﻿using ClassLibrary1;
 using DAL4;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace AirportMSystem
@@ -18,14 +11,22 @@ namespace AirportMSystem
         {
             InitializeComponent();
 
-            if (s is Admin) {
+            if (s is Admin && s.Privilige>0) {
                 dataView.DataSource = Kontrol_Et.görüntüle(s);
                 securityGroup.Visible=false;
                 securityGroup.Update(); }
-            if(s is Security)
+            if((s is Security || s is Staff) && s.Privilige>0)
             {
                 adminGroup.Visible = false;
                 adminGroup.Update();
+            }
+            if (s is CargoMan && s.Privilige > 0)
+            {
+                //TO BE IMPLEMENTED
+            }
+            if (s is HavaKontrol && s.Privilige > 0)
+            {
+                //TO BE IMPLEMENTED
             }
         }
 
