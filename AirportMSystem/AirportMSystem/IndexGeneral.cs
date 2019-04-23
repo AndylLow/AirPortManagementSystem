@@ -14,19 +14,50 @@ namespace AirportMSystem
             if (s is Admin && s.Privilige>0) {
                 dataView.DataSource = Kontrol_Et.görüntüle(s);
                 securityGroup.Visible=false;
-                securityGroup.Update(); }
+                cargoGroup.Visible = false;
+                traficGroup.Visible = false;
+                cargoGroup.Update();
+            }
             if((s is Security || s is Staff) && s.Privilige>0)
             {
+                if (s is Staff) securityGroup.Text = "Staff Menu";
+                traficGroup.Visible = false;
                 adminGroup.Visible = false;
-                adminGroup.Update();
+                cargoGroup.Visible = false;
+                cargoGroup.Update();
             }
             if (s is CargoMan && s.Privilige > 0)
             {
-                //TO BE IMPLEMENTED
+                if (s.Privilige > 1)
+                {
+                    traficGroup.Visible = false;
+                    adminGroup.Visible = false;
+                    securityGroup.Visible = false;
+                    securityGroup.Update();
+                }
+                else {
+                    removecargoBtn.Visible = false;
+                    traficGroup.Visible = false;
+                    adminGroup.Visible = false;
+                    securityGroup.Visible = false;
+                    securityGroup.Update();
+                }
             }
             if (s is HavaKontrol && s.Privilige > 0)
             {
-                //TO BE IMPLEMENTED
+                if (s.Privilige > 1) { 
+                securityGroup.Visible = false;
+                adminGroup.Visible = false;
+                cargoGroup.Visible = false;
+                traficGroup.Update();}
+                else
+                {
+                    removefligthBtn.Visible = false;
+                    securityGroup.Visible = false;
+                    adminGroup.Visible = false;
+                    cargoGroup.Visible = false;
+                    traficGroup.Update();
+                }
             }
         }
 
