@@ -35,6 +35,8 @@
             this.passwordLbl = new System.Windows.Forms.Label();
             this.typeLbl = new System.Windows.Forms.Label();
             this.adminGroup = new System.Windows.Forms.GroupBox();
+            this.priviligeCBox = new System.Windows.Forms.ComboBox();
+            this.priviligeLbl = new System.Windows.Forms.Label();
             this.showBtn = new System.Windows.Forms.Button();
             this.idLbl = new System.Windows.Forms.Label();
             this.idTxt = new System.Windows.Forms.TextBox();
@@ -46,6 +48,8 @@
             this.passwordTxt = new System.Windows.Forms.TextBox();
             this.nameTxt = new System.Windows.Forms.TextBox();
             this.securityGroup = new System.Windows.Forms.GroupBox();
+            this.priviligesecurityCBox = new System.Windows.Forms.ComboBox();
+            this.priviligesecurityLbl = new System.Windows.Forms.Label();
             this.worktypeLbl = new System.Windows.Forms.Label();
             this.worktypeTxt = new System.Windows.Forms.TextBox();
             this.worktimeTxt = new System.Windows.Forms.TextBox();
@@ -62,10 +66,6 @@
             this.namesecurityLbl = new System.Windows.Forms.Label();
             this.typesecurityLbl = new System.Windows.Forms.Label();
             this.emailsecurityLbl = new System.Windows.Forms.Label();
-            this.priviligeLbl = new System.Windows.Forms.Label();
-            this.priviligeCBox = new System.Windows.Forms.ComboBox();
-            this.priviligesecurityLbl = new System.Windows.Forms.Label();
-            this.priviligesecurityCBox = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataView)).BeginInit();
             this.adminGroup.SuspendLayout();
             this.securityGroup.SuspendLayout();
@@ -75,6 +75,7 @@
             // 
             this.dataView.AllowUserToAddRows = false;
             this.dataView.AllowUserToDeleteRows = false;
+            this.dataView.BackgroundColor = System.Drawing.Color.Azure;
             this.dataView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataView.Location = new System.Drawing.Point(12, 31);
             this.dataView.Name = "dataView";
@@ -91,6 +92,7 @@
             this.logoutBtn.TabIndex = 2;
             this.logoutBtn.Text = "Log Out";
             this.logoutBtn.UseVisualStyleBackColor = true;
+            this.logoutBtn.Click += new System.EventHandler(this.logoutBtn_Click);
             // 
             // nameLbl
             // 
@@ -153,6 +155,23 @@
             this.adminGroup.TabIndex = 7;
             this.adminGroup.TabStop = false;
             this.adminGroup.Text = "Admin Panel";
+            // 
+            // priviligeCBox
+            // 
+            this.priviligeCBox.FormattingEnabled = true;
+            this.priviligeCBox.Location = new System.Drawing.Point(200, 209);
+            this.priviligeCBox.Name = "priviligeCBox";
+            this.priviligeCBox.Size = new System.Drawing.Size(234, 24);
+            this.priviligeCBox.TabIndex = 15;
+            // 
+            // priviligeLbl
+            // 
+            this.priviligeLbl.AutoSize = true;
+            this.priviligeLbl.Location = new System.Drawing.Point(59, 212);
+            this.priviligeLbl.Name = "priviligeLbl";
+            this.priviligeLbl.Size = new System.Drawing.Size(79, 17);
+            this.priviligeLbl.TabIndex = 14;
+            this.priviligeLbl.Text = "Privilige No";
             // 
             // showBtn
             // 
@@ -262,6 +281,23 @@
             this.securityGroup.TabIndex = 8;
             this.securityGroup.TabStop = false;
             this.securityGroup.Text = "Security Control";
+            // 
+            // priviligesecurityCBox
+            // 
+            this.priviligesecurityCBox.FormattingEnabled = true;
+            this.priviligesecurityCBox.Location = new System.Drawing.Point(202, 149);
+            this.priviligesecurityCBox.Name = "priviligesecurityCBox";
+            this.priviligesecurityCBox.Size = new System.Drawing.Size(234, 24);
+            this.priviligesecurityCBox.TabIndex = 35;
+            // 
+            // priviligesecurityLbl
+            // 
+            this.priviligesecurityLbl.AutoSize = true;
+            this.priviligesecurityLbl.Location = new System.Drawing.Point(69, 152);
+            this.priviligesecurityLbl.Name = "priviligesecurityLbl";
+            this.priviligesecurityLbl.Size = new System.Drawing.Size(79, 17);
+            this.priviligesecurityLbl.TabIndex = 34;
+            this.priviligesecurityLbl.Text = "Privilige No";
             // 
             // worktypeLbl
             // 
@@ -393,40 +429,6 @@
             this.emailsecurityLbl.Size = new System.Drawing.Size(42, 17);
             this.emailsecurityLbl.TabIndex = 15;
             this.emailsecurityLbl.Text = "Email";
-            // 
-            // priviligeLbl
-            // 
-            this.priviligeLbl.AutoSize = true;
-            this.priviligeLbl.Location = new System.Drawing.Point(59, 212);
-            this.priviligeLbl.Name = "priviligeLbl";
-            this.priviligeLbl.Size = new System.Drawing.Size(79, 17);
-            this.priviligeLbl.TabIndex = 14;
-            this.priviligeLbl.Text = "Privilige No";
-            // 
-            // priviligeCBox
-            // 
-            this.priviligeCBox.FormattingEnabled = true;
-            this.priviligeCBox.Location = new System.Drawing.Point(200, 209);
-            this.priviligeCBox.Name = "priviligeCBox";
-            this.priviligeCBox.Size = new System.Drawing.Size(234, 24);
-            this.priviligeCBox.TabIndex = 15;
-            // 
-            // priviligesecurityLbl
-            // 
-            this.priviligesecurityLbl.AutoSize = true;
-            this.priviligesecurityLbl.Location = new System.Drawing.Point(69, 152);
-            this.priviligesecurityLbl.Name = "priviligesecurityLbl";
-            this.priviligesecurityLbl.Size = new System.Drawing.Size(79, 17);
-            this.priviligesecurityLbl.TabIndex = 34;
-            this.priviligesecurityLbl.Text = "Privilige No";
-            // 
-            // priviligesecurityCBox
-            // 
-            this.priviligesecurityCBox.FormattingEnabled = true;
-            this.priviligesecurityCBox.Location = new System.Drawing.Point(202, 149);
-            this.priviligesecurityCBox.Name = "priviligesecurityCBox";
-            this.priviligesecurityCBox.Size = new System.Drawing.Size(234, 24);
-            this.priviligesecurityCBox.TabIndex = 35;
             // 
             // IndexGeneral
             // 

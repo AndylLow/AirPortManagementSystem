@@ -6,11 +6,7 @@ using System.Threading.Tasks;
 
 namespace ClassLibrary1
 {
-    public class Admin:Employee
+    public class HavaKontrol:Employee
     {
-        public Admin()
-        {
-
-        }
     }
 }

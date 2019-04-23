@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ClassLibrary1
 {
-    class Danışma:Employee
+    public class Danışma:Employee
     {
     }
 }

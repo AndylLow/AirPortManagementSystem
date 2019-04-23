@@ -24,6 +24,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -112,9 +113,9 @@
       <Project>{99f43395-f350-45ef-b66d-27d831986581}</Project>
       <Name>ClassSource</Name>
     </ProjectReference>
-    <ProjectReference Include="..\DataAccessLayer\DataAccessLayer.csproj">
-      <Project>{7708c937-d9a3-4ed2-9b73-da2281068147}</Project>
-      <Name>DataAccessLayer</Name>
+    <ProjectReference Include="..\DAL4\DAL4.csproj">
+      <Project>{aaca0d84-23ff-492f-bdc6-d3c3b340f0e2}</Project>
+      <Name>DAL4</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

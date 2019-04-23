@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ClassLibrary1
 {
-    class Staff:Employee
+    public class Staff:Employee
     {
     }
 }
