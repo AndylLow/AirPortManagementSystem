@@ -916,12 +916,12 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1149, 532);
-            this.Controls.Add(this.traficGroup);
             this.Controls.Add(this.logoutBtn);
             this.Controls.Add(this.dataView);
             this.Controls.Add(this.adminGroup);
             this.Controls.Add(this.securityGroup);
             this.Controls.Add(this.cargoGroup);
+            this.Controls.Add(this.traficGroup);
             this.Name = "IndexGeneral";
             this.Text = "IndexGeneral";
             ((System.ComponentModel.ISupportInitialize)(this.dataView)).EndInit();
