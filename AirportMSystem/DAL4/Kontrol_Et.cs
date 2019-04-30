@@ -19,86 +19,6 @@ namespace DAL4
         static string connectionString;
         static SQLiteConnection conn;
         static SQLiteCommand cmd;
-        public static object sorguAdmin(int sorgu,int id,string fullname, string email, int type, int privilige)
-        {
-            try { 
-            DataTable dt = new DataTable();
-            conn.Open();
-            int x = 0;
-            if(sorgu==0)
-                cmd.CommandText = "Select Id,NAMEFULL,Email,EmployeeType,Privilige from users where ";
-            if (sorgu == 1)
-                cmd.CommandText = "delete from users where ";
-            if (sorgu == 2)
-                cmd.CommandText = "insert into users values ( ";
-
-            if (id != -1)
-            {
-                if (x == 0) {
-                    cmd.CommandText += "id ='" + id + "' "; x++; }
-                else { 
-                    if (sorgu == 2)
-                       cmd.CommandText += ",id ='" + id + "' ";
-                    else
-                       cmd.CommandText += "AND id ='" + id + "' ";
-                }
-            }
-            if (fullname != null)
-            {
-               
-                if (x == 0) {
-                    cmd.CommandText += "namefull ='" + fullname + "' "; x++; }
-                else { 
-                    if (sorgu == 2)
-                       cmd.CommandText += ",namefull ='" + fullname + "' ";
-                    else
-                       cmd.CommandText += "AND namefull ='" + fullname + "' ";
-                }
-            }
-            if (email != null)
-            {
-                cmd.CommandText += "email ='" + email+ "' ";x++;
-                if (x == 0) {
-                    cmd.CommandText += "email ='" + email + "' "; x++; }
-                else { 
-                    if (sorgu == 2)
-                       cmd.CommandText += ",email ='" + email + "' ";
-                    else
-                       cmd.CommandText += "AND email ='" + email + "' ";
-                }
-            }
-            if (type != -1)
-            {
-                
-                if (x == 0) {
-                    cmd.CommandText += "employeetype ='" + type + "' "; x++; }
-                else { 
-                    if (sorgu == 2)
-                       cmd.CommandText += ",employeetype ='" + type + "' ";
-                    else
-                       cmd.CommandText += "AND employeetype ='" + type + "' ";
-                }
-            }
-            if (privilige != -1)
-            {
-                
-                if (x == 0) {
-                    cmd.CommandText += "privilige ='" + privilige + "' "; x++; }
-                else { 
-                    if (sorgu == 2)
-                       cmd.CommandText += ",privilige ='" + privilige + "' ";
-                    else
-                       cmd.CommandText += "AND privilige ='" + privilige + "' ";
-                }
-            }
-            if (x == 0) cmd.CommandText = "Select Id,NAMEFULL,Email,EmployeeType,Privilige from users";
-            if (sorgu == 2) cmd.CommandText += ") ";
-            SQLiteDataAdapter da = new SQLiteDataAdapter(cmd);
-            da.Fill(dt);
-            return dt;
-            }
-            catch (Exception) { throw; }
-        }
         public static object görüntüle(Employee s)
         {
             DataTable dt = new DataTable();
@@ -126,6 +46,7 @@ namespace DAL4
                 cmd.CommandText = "select * from cargoes";
             SQLiteDataAdapter da = new SQLiteDataAdapter(cmd);
             da.Fill(dt);
+            conn.Close();
             return dt;
         }
         public static Employee GetEmployee(string email)
@@ -204,6 +125,144 @@ namespace DAL4
              conn = new SQLiteConnection(connectionString);
              cmd = new SQLiteCommand(conn);
         }
+        public static object sorguAdmin(int sorgu, int id, string fullname, string email,string password, int type, int privilige)
+        {
+            try
+            {
+                DataTable dt = new DataTable();
+                conn.Open();
+                int x = 0;
+                if (sorgu == 0)
+                    cmd.CommandText = "Select Id,NAMEFULL,Email,EmployeeType,Privilige from users where ";
+                if (sorgu == 1)
+                    cmd.CommandText = "delete from users where ";
+                if (sorgu == 2)
+                    cmd.CommandText = "insert into users values ( ";
+
+                if (id != -1)
+                {
+                    if (x == 0)
+                    {
+                        if (sorgu == 2)
+                            cmd.CommandText += " '" + id + "' ";
+                        else
+                            cmd.CommandText += "id ='" + id + "' ";
+                        x++;
+                    }
+                    else
+                    {
+                        if (sorgu == 2)
+                            cmd.CommandText += ",'" + id + "' ";
+                        else
+                            cmd.CommandText += "AND id ='" + id + "' ";
+                    }
+                }
+                if (fullname != "")
+                {
+
+                    if (x == 0)
+                    {
+                        if (sorgu == 2)
+                            cmd.CommandText += " '" + fullname + "' ";
+                        else
+                            cmd.CommandText += "namefull ='" + fullname + "' ";
+                        x++;
+                    }
+                    else
+                    {
+                        if (sorgu == 2)
+                            cmd.CommandText += ",'" + fullname + "' ";
+                        else
+                            cmd.CommandText += "AND namefull ='" + fullname + "' ";
+                    }
+                }
+                if (email != "")
+                {
+                    
+                    if (x == 0)
+                    {
+                        if (sorgu == 2)
+                            cmd.CommandText += " '" + email + "' ";
+                        else 
+                            cmd.CommandText += "email ='" + email + "' ";
+                        x++;
+                    }
+                    else
+                    {
+                        if (sorgu == 2)
+                            cmd.CommandText += ",'" + email + "' ";
+                        else
+                            cmd.CommandText += "AND email ='" + email + "' ";
+                    }
+                }
+                if (password != "")
+                {
+
+                    if (x == 0)
+                    {
+                        if (sorgu == 2)
+                            cmd.CommandText += " '" + password + "' ";
+                        else 
+                            cmd.CommandText += "password='" + password + "' ";
+                        x++;
+                    }
+                    else
+                    {
+                        if (sorgu == 2)
+                            cmd.CommandText += ",'" + password + "' ";
+                        else
+                            cmd.CommandText += "AND password ='" + password + "' ";
+                    }
+                }
+               
+                if (type != -1)
+                {
+
+                    if (x == 0)
+                    {
+                        if (sorgu == 2)
+                            cmd.CommandText += " '" + type + "' ";
+                        else 
+                            cmd.CommandText += "employeetype ='" + type + "' ";
+                        x++;
+                    }
+                    else
+                    {
+                        if (sorgu == 2)
+                            cmd.CommandText += ",'" + type + "' ";
+                        else
+                            cmd.CommandText += "AND employeetype ='" + type + "' ";
+                    }
+                }
+                if (privilige != -1)
+                {
+
+                    if (x == 0)
+                    {
+                        if (sorgu == 2)
+                            cmd.CommandText += " '" + privilige + "' ";
+                        else 
+                            cmd.CommandText += "privilige ='" + privilige + "' ";
+                        x++;
+                    }
+                    else
+                    {
+                        if (sorgu == 2)
+                            cmd.CommandText += ",'" + privilige + "' ";
+                        else
+                            cmd.CommandText += "AND privilige ='" + privilige + "' ";
+                    }
+                }
+                if (x == 0) cmd.CommandText = "Select Id,NAMEFULL,Email,EmployeeType,Privilige from users";
+                if (sorgu == 2) cmd.CommandText += ") ";
+                SQLiteDataAdapter da = new SQLiteDataAdapter(cmd);
+                da.Fill(dt);
+                conn.Close();
+                return dt;
+            }
+            catch (Exception) { throw; }
+        }
+
         public static bool checkUser(string email, string password)
         {
             bool result = false;

@@ -80,14 +80,36 @@ namespace AirportMSystem
 
         private void addBtn_Click(object sender, EventArgs e)
         {
-            dataView.DataSource = Kontrol_Et.sorguAdmin(2,int.Parse(idTxt.Text),nameTxt.Text,emailTxt.Text,typeCBox.SelectedIndex,priviligeCBox.SelectedIndex);
-            dataView.Update();
+            int x = -1;
+            if (idTxt.Text != "")
+                x = int.Parse(idTxt.Text);
+            try
+            {
+                Kontrol_Et.sorguAdmin(2, int.Parse(idTxt.Text), nameTxt.Text, emailTxt.Text, passwordTxt.Text, typeCBox.SelectedIndex, priviligeCBox.SelectedIndex);
+                MessageBox.Show("Added succesfully");
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Failed to insert to database");
+            }
         }
 
         private void deleteBtn_Click(object sender, EventArgs e)
         {
-            dataView.DataSource = Kontrol_Et.sorguAdmin(1, int.Parse(idTxt.Text), nameTxt.Text, emailTxt.Text, typeCBox.SelectedIndex, priviligeCBox.SelectedIndex);
-            dataView.Update();
+            int x = -1;
+            if (idTxt.Text != "")
+                x = int.Parse(idTxt.Text);
+            try
+            {
+                Kontrol_Et.sorguAdmin(1, int.Parse(idTxt.Text), nameTxt.Text, emailTxt.Text, "", typeCBox.SelectedIndex, priviligeCBox.SelectedIndex);
+                MessageBox.Show("Deletion Succesfull");
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("Deletion failed");
+            }
+            
         }
 
         private void showBtn_Click(object sender, EventArgs e)
@@ -95,7 +117,7 @@ namespace AirportMSystem
             int x = -1;
             if (idTxt.Text!="")
                   x= int.Parse(idTxt.Text);
-            dataView.DataSource = Kontrol_Et.sorguAdmin(0, x, nameTxt.Text, emailTxt.Text, typeCBox.SelectedIndex, priviligeCBox.SelectedIndex);
+            dataView.DataSource = Kontrol_Et.sorguAdmin(0, x, nameTxt.Text, emailTxt.Text,"", typeCBox.SelectedIndex, priviligeCBox.SelectedIndex);
             dataView.Update();
         }
     }
