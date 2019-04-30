@@ -77,5 +77,26 @@ namespace AirportMSystem
             yeni.Show();
             this.Hide();
         }
+
+        private void addBtn_Click(object sender, EventArgs e)
+        {
+            dataView.DataSource = Kontrol_Et.sorguAdmin(2,int.Parse(idTxt.Text),nameTxt.Text,emailTxt.Text,typeCBox.SelectedIndex,priviligeCBox.SelectedIndex);
+            dataView.Update();
+        }
+
+        private void deleteBtn_Click(object sender, EventArgs e)
+        {
+            dataView.DataSource = Kontrol_Et.sorguAdmin(1, int.Parse(idTxt.Text), nameTxt.Text, emailTxt.Text, typeCBox.SelectedIndex, priviligeCBox.SelectedIndex);
+            dataView.Update();
+        }
+
+        private void showBtn_Click(object sender, EventArgs e)
+        {
+            int x = -1;
+            if (idTxt.Text!="")
+                  x= int.Parse(idTxt.Text);
+            dataView.DataSource = Kontrol_Et.sorguAdmin(0, x, nameTxt.Text, emailTxt.Text, typeCBox.SelectedIndex, priviligeCBox.SelectedIndex);
+            dataView.Update();
+        }
     }
 }

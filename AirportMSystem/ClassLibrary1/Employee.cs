@@ -29,7 +29,6 @@ namespace ClassLibrary1
             this.password = password ?? throw new ArgumentNullException(nameof(password));
             this.type = type;
             this.privilige = privilige;
-            //TO BE IMPLEMENTED:: ADD THIS TO DATABASE!!
         }
 
         public Employee()

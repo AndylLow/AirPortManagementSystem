@@ -43,7 +43,6 @@
             this.addBtn = new System.Windows.Forms.Button();
             this.deleteBtn = new System.Windows.Forms.Button();
             this.typeCBox = new System.Windows.Forms.ComboBox();
-            this.updateBtn = new System.Windows.Forms.Button();
             this.emailTxt = new System.Windows.Forms.TextBox();
             this.passwordTxt = new System.Windows.Forms.TextBox();
             this.nameTxt = new System.Windows.Forms.TextBox();
@@ -67,51 +66,51 @@
             this.typesecurityLbl = new System.Windows.Forms.Label();
             this.emailsecurityLbl = new System.Windows.Forms.Label();
             this.traficGroup = new System.Windows.Forms.GroupBox();
-            this.cargoGroup = new System.Windows.Forms.GroupBox();
-            this.cargoidLbl = new System.Windows.Forms.Label();
-            this.fromLbl = new System.Windows.Forms.Label();
-            this.toLbl = new System.Windows.Forms.Label();
-            this.cargomanidLbl = new System.Windows.Forms.Label();
-            this.cargomannameLbl = new System.Windows.Forms.Label();
-            this.cargofromLbl = new System.Windows.Forms.Label();
-            this.cargoidTxt = new System.Windows.Forms.TextBox();
-            this.fromTxt = new System.Windows.Forms.TextBox();
-            this.toTxt = new System.Windows.Forms.TextBox();
-            this.cargomanidTxt = new System.Windows.Forms.TextBox();
-            this.cargomannameTxt = new System.Windows.Forms.TextBox();
-            this.cargofromnameTxt = new System.Windows.Forms.TextBox();
-            this.addcargoBtn = new System.Windows.Forms.Button();
-            this.searchcargoBtn = new System.Windows.Forms.Button();
-            this.removecargoBtn = new System.Windows.Forms.Button();
-            this.departureidLbl = new System.Windows.Forms.Label();
-            this.arrivalidLbl = new System.Windows.Forms.Label();
-            this.acepilotnameLbl = new System.Windows.Forms.Label();
-            this.acepilotidLbl = new System.Windows.Forms.Label();
-            this.secondarypilotnameLbl = new System.Windows.Forms.Label();
-            this.secondarypilotidLbl = new System.Windows.Forms.Label();
-            this.host3idLbl = new System.Windows.Forms.Label();
-            this.host3nameLbl = new System.Windows.Forms.Label();
-            this.host1idLbl = new System.Windows.Forms.Label();
-            this.host1nameLbl = new System.Windows.Forms.Label();
-            this.host2idLbl = new System.Windows.Forms.Label();
-            this.host2nameLbl = new System.Windows.Forms.Label();
-            this.flightidLbl = new System.Windows.Forms.Label();
-            this.departureidTxt = new System.Windows.Forms.TextBox();
-            this.arrivalidTxt = new System.Windows.Forms.TextBox();
-            this.acepilotnameTxt = new System.Windows.Forms.TextBox();
-            this.acepilotidTxt = new System.Windows.Forms.TextBox();
-            this.secondarypilotnameTxt = new System.Windows.Forms.TextBox();
-            this.secondarypilotidTxt = new System.Windows.Forms.TextBox();
-            this.host1idTxt = new System.Windows.Forms.TextBox();
-            this.host1nameTxt = new System.Windows.Forms.TextBox();
-            this.host2idTxt = new System.Windows.Forms.TextBox();
-            this.host2nameTxt = new System.Windows.Forms.TextBox();
-            this.host3idTxt = new System.Windows.Forms.TextBox();
-            this.host3nameTxt = new System.Windows.Forms.TextBox();
-            this.flightidTxt = new System.Windows.Forms.TextBox();
-            this.searchflightBtn = new System.Windows.Forms.Button();
-            this.addflightBtn = new System.Windows.Forms.Button();
             this.removefligthBtn = new System.Windows.Forms.Button();
+            this.addflightBtn = new System.Windows.Forms.Button();
+            this.searchflightBtn = new System.Windows.Forms.Button();
+            this.flightidTxt = new System.Windows.Forms.TextBox();
+            this.host3nameTxt = new System.Windows.Forms.TextBox();
+            this.host3idTxt = new System.Windows.Forms.TextBox();
+            this.host2nameTxt = new System.Windows.Forms.TextBox();
+            this.host2idTxt = new System.Windows.Forms.TextBox();
+            this.host1nameTxt = new System.Windows.Forms.TextBox();
+            this.host1idTxt = new System.Windows.Forms.TextBox();
+            this.secondarypilotidTxt = new System.Windows.Forms.TextBox();
+            this.secondarypilotnameTxt = new System.Windows.Forms.TextBox();
+            this.acepilotidTxt = new System.Windows.Forms.TextBox();
+            this.acepilotnameTxt = new System.Windows.Forms.TextBox();
+            this.arrivalidTxt = new System.Windows.Forms.TextBox();
+            this.departureidTxt = new System.Windows.Forms.TextBox();
+            this.flightidLbl = new System.Windows.Forms.Label();
+            this.host2nameLbl = new System.Windows.Forms.Label();
+            this.host2idLbl = new System.Windows.Forms.Label();
+            this.host1nameLbl = new System.Windows.Forms.Label();
+            this.host1idLbl = new System.Windows.Forms.Label();
+            this.host3nameLbl = new System.Windows.Forms.Label();
+            this.host3idLbl = new System.Windows.Forms.Label();
+            this.secondarypilotidLbl = new System.Windows.Forms.Label();
+            this.secondarypilotnameLbl = new System.Windows.Forms.Label();
+            this.acepilotidLbl = new System.Windows.Forms.Label();
+            this.acepilotnameLbl = new System.Windows.Forms.Label();
+            this.arrivalidLbl = new System.Windows.Forms.Label();
+            this.departureidLbl = new System.Windows.Forms.Label();
+            this.cargoGroup = new System.Windows.Forms.GroupBox();
+            this.removecargoBtn = new System.Windows.Forms.Button();
+            this.searchcargoBtn = new System.Windows.Forms.Button();
+            this.addcargoBtn = new System.Windows.Forms.Button();
+            this.cargofromnameTxt = new System.Windows.Forms.TextBox();
+            this.cargomannameTxt = new System.Windows.Forms.TextBox();
+            this.cargomanidTxt = new System.Windows.Forms.TextBox();
+            this.toTxt = new System.Windows.Forms.TextBox();
+            this.fromTxt = new System.Windows.Forms.TextBox();
+            this.cargoidTxt = new System.Windows.Forms.TextBox();
+            this.cargofromLbl = new System.Windows.Forms.Label();
+            this.cargomannameLbl = new System.Windows.Forms.Label();
+            this.cargomanidLbl = new System.Windows.Forms.Label();
+            this.toLbl = new System.Windows.Forms.Label();
+            this.fromLbl = new System.Windows.Forms.Label();
+            this.cargoidLbl = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataView)).BeginInit();
             this.adminGroup.SuspendLayout();
             this.securityGroup.SuspendLayout();
@@ -189,7 +188,6 @@
             this.adminGroup.Controls.Add(this.addBtn);
             this.adminGroup.Controls.Add(this.deleteBtn);
             this.adminGroup.Controls.Add(this.typeCBox);
-            this.adminGroup.Controls.Add(this.updateBtn);
             this.adminGroup.Controls.Add(this.emailTxt);
             this.adminGroup.Controls.Add(this.passwordTxt);
             this.adminGroup.Controls.Add(this.nameTxt);
@@ -234,6 +232,7 @@
             this.showBtn.TabIndex = 13;
             this.showBtn.Text = "Show";
             this.showBtn.UseVisualStyleBackColor = true;
+            this.showBtn.Click += new System.EventHandler(this.showBtn_Click);
             // 
             // idLbl
             // 
@@ -259,6 +258,7 @@
             this.addBtn.TabIndex = 8;
             this.addBtn.Text = "Add";
             this.addBtn.UseVisualStyleBackColor = true;
+            this.addBtn.Click += new System.EventHandler(this.addBtn_Click);
             // 
             // deleteBtn
             // 
@@ -268,6 +268,7 @@
             this.deleteBtn.TabIndex = 10;
             this.deleteBtn.Text = "Delete";
             this.deleteBtn.UseVisualStyleBackColor = true;
+            this.deleteBtn.Click += new System.EventHandler(this.deleteBtn_Click);
             // 
             // typeCBox
             // 
@@ -284,15 +285,6 @@
             this.typeCBox.Name = "typeCBox";
             this.typeCBox.Size = new System.Drawing.Size(234, 24);
             this.typeCBox.TabIndex = 10;
-            // 
-            // updateBtn
-            // 
-            this.updateBtn.Location = new System.Drawing.Point(227, 248);
-            this.updateBtn.Name = "updateBtn";
-            this.updateBtn.Size = new System.Drawing.Size(75, 29);
-            this.updateBtn.TabIndex = 9;
-            this.updateBtn.Text = "Update";
-            this.updateBtn.UseVisualStyleBackColor = true;
             // 
             // emailTxt
             // 
@@ -529,6 +521,241 @@
             this.traficGroup.TabStop = false;
             this.traficGroup.Text = "Air Traffic";
             // 
+            // removefligthBtn
+            // 
+            this.removefligthBtn.Location = new System.Drawing.Point(312, 309);
+            this.removefligthBtn.Name = "removefligthBtn";
+            this.removefligthBtn.Size = new System.Drawing.Size(75, 23);
+            this.removefligthBtn.TabIndex = 28;
+            this.removefligthBtn.Text = "Remove";
+            this.removefligthBtn.UseVisualStyleBackColor = true;
+            // 
+            // addflightBtn
+            // 
+            this.addflightBtn.Location = new System.Drawing.Point(422, 309);
+            this.addflightBtn.Name = "addflightBtn";
+            this.addflightBtn.Size = new System.Drawing.Size(75, 23);
+            this.addflightBtn.TabIndex = 27;
+            this.addflightBtn.Text = "Add";
+            this.addflightBtn.UseVisualStyleBackColor = true;
+            // 
+            // searchflightBtn
+            // 
+            this.searchflightBtn.Location = new System.Drawing.Point(204, 329);
+            this.searchflightBtn.Name = "searchflightBtn";
+            this.searchflightBtn.Size = new System.Drawing.Size(75, 23);
+            this.searchflightBtn.TabIndex = 26;
+            this.searchflightBtn.Text = "Search";
+            this.searchflightBtn.UseVisualStyleBackColor = true;
+            // 
+            // flightidTxt
+            // 
+            this.flightidTxt.Location = new System.Drawing.Point(88, 329);
+            this.flightidTxt.Name = "flightidTxt";
+            this.flightidTxt.Size = new System.Drawing.Size(78, 22);
+            this.flightidTxt.TabIndex = 25;
+            // 
+            // host3nameTxt
+            // 
+            this.host3nameTxt.Location = new System.Drawing.Point(419, 234);
+            this.host3nameTxt.Name = "host3nameTxt";
+            this.host3nameTxt.Size = new System.Drawing.Size(78, 22);
+            this.host3nameTxt.TabIndex = 24;
+            // 
+            // host3idTxt
+            // 
+            this.host3idTxt.Location = new System.Drawing.Point(419, 190);
+            this.host3idTxt.Name = "host3idTxt";
+            this.host3idTxt.Size = new System.Drawing.Size(78, 22);
+            this.host3idTxt.TabIndex = 23;
+            // 
+            // host2nameTxt
+            // 
+            this.host2nameTxt.Location = new System.Drawing.Point(419, 149);
+            this.host2nameTxt.Name = "host2nameTxt";
+            this.host2nameTxt.Size = new System.Drawing.Size(78, 22);
+            this.host2nameTxt.TabIndex = 22;
+            // 
+            // host2idTxt
+            // 
+            this.host2idTxt.Location = new System.Drawing.Point(419, 102);
+            this.host2idTxt.Name = "host2idTxt";
+            this.host2idTxt.Size = new System.Drawing.Size(78, 22);
+            this.host2idTxt.TabIndex = 21;
+            // 
+            // host1nameTxt
+            // 
+            this.host1nameTxt.Location = new System.Drawing.Point(419, 63);
+            this.host1nameTxt.Name = "host1nameTxt";
+            this.host1nameTxt.Size = new System.Drawing.Size(78, 22);
+            this.host1nameTxt.TabIndex = 20;
+            // 
+            // host1idTxt
+            // 
+            this.host1idTxt.Location = new System.Drawing.Point(419, 24);
+            this.host1idTxt.Name = "host1idTxt";
+            this.host1idTxt.Size = new System.Drawing.Size(78, 22);
+            this.host1idTxt.TabIndex = 19;
+            // 
+            // secondarypilotidTxt
+            // 
+            this.secondarypilotidTxt.Location = new System.Drawing.Point(172, 209);
+            this.secondarypilotidTxt.Name = "secondarypilotidTxt";
+            this.secondarypilotidTxt.Size = new System.Drawing.Size(78, 22);
+            this.secondarypilotidTxt.TabIndex = 18;
+            // 
+            // secondarypilotnameTxt
+            // 
+            this.secondarypilotnameTxt.Location = new System.Drawing.Point(172, 167);
+            this.secondarypilotnameTxt.Name = "secondarypilotnameTxt";
+            this.secondarypilotnameTxt.Size = new System.Drawing.Size(78, 22);
+            this.secondarypilotnameTxt.TabIndex = 17;
+            // 
+            // acepilotidTxt
+            // 
+            this.acepilotidTxt.Location = new System.Drawing.Point(172, 129);
+            this.acepilotidTxt.Name = "acepilotidTxt";
+            this.acepilotidTxt.Size = new System.Drawing.Size(78, 22);
+            this.acepilotidTxt.TabIndex = 16;
+            // 
+            // acepilotnameTxt
+            // 
+            this.acepilotnameTxt.Location = new System.Drawing.Point(172, 97);
+            this.acepilotnameTxt.Name = "acepilotnameTxt";
+            this.acepilotnameTxt.Size = new System.Drawing.Size(78, 22);
+            this.acepilotnameTxt.TabIndex = 15;
+            // 
+            // arrivalidTxt
+            // 
+            this.arrivalidTxt.Location = new System.Drawing.Point(172, 60);
+            this.arrivalidTxt.Name = "arrivalidTxt";
+            this.arrivalidTxt.Size = new System.Drawing.Size(78, 22);
+            this.arrivalidTxt.TabIndex = 14;
+            // 
+            // departureidTxt
+            // 
+            this.departureidTxt.Location = new System.Drawing.Point(172, 24);
+            this.departureidTxt.Name = "departureidTxt";
+            this.departureidTxt.Size = new System.Drawing.Size(78, 22);
+            this.departureidTxt.TabIndex = 13;
+            // 
+            // flightidLbl
+            // 
+            this.flightidLbl.AutoSize = true;
+            this.flightidLbl.Location = new System.Drawing.Point(16, 332);
+            this.flightidLbl.Name = "flightidLbl";
+            this.flightidLbl.Size = new System.Drawing.Size(59, 17);
+            this.flightidLbl.TabIndex = 12;
+            this.flightidLbl.Text = "Flight ID";
+            // 
+            // host2nameLbl
+            // 
+            this.host2nameLbl.AutoSize = true;
+            this.host2nameLbl.Location = new System.Drawing.Point(265, 154);
+            this.host2nameLbl.Name = "host2nameLbl";
+            this.host2nameLbl.Size = new System.Drawing.Size(145, 17);
+            this.host2nameLbl.TabIndex = 11;
+            this.host2nameLbl.Text = "Host/Hostess 2 Name";
+            // 
+            // host2idLbl
+            // 
+            this.host2idLbl.AutoSize = true;
+            this.host2idLbl.Location = new System.Drawing.Point(265, 105);
+            this.host2idLbl.Name = "host2idLbl";
+            this.host2idLbl.Size = new System.Drawing.Size(121, 17);
+            this.host2idLbl.TabIndex = 10;
+            this.host2idLbl.Text = "Host/Hostess 2 ID";
+            // 
+            // host1nameLbl
+            // 
+            this.host1nameLbl.AutoSize = true;
+            this.host1nameLbl.Location = new System.Drawing.Point(266, 63);
+            this.host1nameLbl.Name = "host1nameLbl";
+            this.host1nameLbl.Size = new System.Drawing.Size(145, 17);
+            this.host1nameLbl.TabIndex = 9;
+            this.host1nameLbl.Text = "Host/Hostess 1 Name";
+            // 
+            // host1idLbl
+            // 
+            this.host1idLbl.AutoSize = true;
+            this.host1idLbl.Location = new System.Drawing.Point(266, 27);
+            this.host1idLbl.Name = "host1idLbl";
+            this.host1idLbl.Size = new System.Drawing.Size(121, 17);
+            this.host1idLbl.TabIndex = 8;
+            this.host1idLbl.Text = "Host/Hostess 1 ID";
+            // 
+            // host3nameLbl
+            // 
+            this.host3nameLbl.AutoSize = true;
+            this.host3nameLbl.Location = new System.Drawing.Point(265, 237);
+            this.host3nameLbl.Name = "host3nameLbl";
+            this.host3nameLbl.Size = new System.Drawing.Size(145, 17);
+            this.host3nameLbl.TabIndex = 7;
+            this.host3nameLbl.Text = "Host/Hostess 3 Name";
+            // 
+            // host3idLbl
+            // 
+            this.host3idLbl.AutoSize = true;
+            this.host3idLbl.Location = new System.Drawing.Point(265, 197);
+            this.host3idLbl.Name = "host3idLbl";
+            this.host3idLbl.Size = new System.Drawing.Size(121, 17);
+            this.host3idLbl.TabIndex = 6;
+            this.host3idLbl.Text = "Host/Hostess 3 ID";
+            // 
+            // secondarypilotidLbl
+            // 
+            this.secondarypilotidLbl.AutoSize = true;
+            this.secondarypilotidLbl.Location = new System.Drawing.Point(16, 209);
+            this.secondarypilotidLbl.Name = "secondarypilotidLbl";
+            this.secondarypilotidLbl.Size = new System.Drawing.Size(124, 17);
+            this.secondarypilotidLbl.TabIndex = 5;
+            this.secondarypilotidLbl.Text = "Secondary Pilot ID";
+            // 
+            // secondarypilotnameLbl
+            // 
+            this.secondarypilotnameLbl.AutoSize = true;
+            this.secondarypilotnameLbl.Location = new System.Drawing.Point(16, 172);
+            this.secondarypilotnameLbl.Name = "secondarypilotnameLbl";
+            this.secondarypilotnameLbl.Size = new System.Drawing.Size(150, 17);
+            this.secondarypilotnameLbl.TabIndex = 4;
+            this.secondarypilotnameLbl.Text = "Secondary Pilot NAME";
+            // 
+            // acepilotidLbl
+            // 
+            this.acepilotidLbl.AutoSize = true;
+            this.acepilotidLbl.Location = new System.Drawing.Point(16, 134);
+            this.acepilotidLbl.Name = "acepilotidLbl";
+            this.acepilotidLbl.Size = new System.Drawing.Size(80, 17);
+            this.acepilotidLbl.TabIndex = 3;
+            this.acepilotidLbl.Text = "Ace Pilot ID";
+            // 
+            // acepilotnameLbl
+            // 
+            this.acepilotnameLbl.AutoSize = true;
+            this.acepilotnameLbl.Location = new System.Drawing.Point(16, 102);
+            this.acepilotnameLbl.Name = "acepilotnameLbl";
+            this.acepilotnameLbl.Size = new System.Drawing.Size(104, 17);
+            this.acepilotnameLbl.TabIndex = 2;
+            this.acepilotnameLbl.Text = "Ace Pilot Name";
+            // 
+            // arrivalidLbl
+            // 
+            this.arrivalidLbl.AutoSize = true;
+            this.arrivalidLbl.Location = new System.Drawing.Point(16, 63);
+            this.arrivalidLbl.Name = "arrivalidLbl";
+            this.arrivalidLbl.Size = new System.Drawing.Size(65, 17);
+            this.arrivalidLbl.TabIndex = 1;
+            this.arrivalidLbl.Text = "Arrival ID";
+            // 
+            // departureidLbl
+            // 
+            this.departureidLbl.AutoSize = true;
+            this.departureidLbl.Location = new System.Drawing.Point(16, 27);
+            this.departureidLbl.Name = "departureidLbl";
+            this.departureidLbl.Size = new System.Drawing.Size(89, 17);
+            this.departureidLbl.TabIndex = 0;
+            this.departureidLbl.Text = "Departure ID";
+            // 
             // cargoGroup
             // 
             this.cargoGroup.Controls.Add(this.removecargoBtn);
@@ -553,110 +780,14 @@
             this.cargoGroup.TabStop = false;
             this.cargoGroup.Text = "Cargo";
             // 
-            // cargoidLbl
+            // removecargoBtn
             // 
-            this.cargoidLbl.AutoSize = true;
-            this.cargoidLbl.Location = new System.Drawing.Point(13, 284);
-            this.cargoidLbl.Name = "cargoidLbl";
-            this.cargoidLbl.Size = new System.Drawing.Size(21, 17);
-            this.cargoidLbl.TabIndex = 0;
-            this.cargoidLbl.Text = "ID";
-            // 
-            // fromLbl
-            // 
-            this.fromLbl.AutoSize = true;
-            this.fromLbl.Location = new System.Drawing.Point(94, 66);
-            this.fromLbl.Name = "fromLbl";
-            this.fromLbl.Size = new System.Drawing.Size(40, 17);
-            this.fromLbl.TabIndex = 1;
-            this.fromLbl.Text = "From";
-            // 
-            // toLbl
-            // 
-            this.toLbl.AutoSize = true;
-            this.toLbl.Location = new System.Drawing.Point(109, 97);
-            this.toLbl.Name = "toLbl";
-            this.toLbl.Size = new System.Drawing.Size(25, 17);
-            this.toLbl.TabIndex = 2;
-            this.toLbl.Text = "To";
-            // 
-            // cargomanidLbl
-            // 
-            this.cargomanidLbl.AutoSize = true;
-            this.cargomanidLbl.Location = new System.Drawing.Point(40, 132);
-            this.cargomanidLbl.Name = "cargomanidLbl";
-            this.cargomanidLbl.Size = new System.Drawing.Size(94, 17);
-            this.cargomanidLbl.TabIndex = 3;
-            this.cargomanidLbl.Text = "Cargo man ID";
-            // 
-            // cargomannameLbl
-            // 
-            this.cargomannameLbl.AutoSize = true;
-            this.cargomannameLbl.Location = new System.Drawing.Point(24, 169);
-            this.cargomannameLbl.Name = "cargomannameLbl";
-            this.cargomannameLbl.Size = new System.Drawing.Size(118, 17);
-            this.cargomannameLbl.TabIndex = 4;
-            this.cargomannameLbl.Text = "Cargo man Name";
-            // 
-            // cargofromLbl
-            // 
-            this.cargofromLbl.AutoSize = true;
-            this.cargofromLbl.Location = new System.Drawing.Point(13, 209);
-            this.cargofromLbl.Name = "cargofromLbl";
-            this.cargofromLbl.Size = new System.Drawing.Size(131, 17);
-            this.cargofromLbl.TabIndex = 5;
-            this.cargofromLbl.Text = "Cargo From (name)";
-            // 
-            // cargoidTxt
-            // 
-            this.cargoidTxt.Location = new System.Drawing.Point(74, 284);
-            this.cargoidTxt.Name = "cargoidTxt";
-            this.cargoidTxt.Size = new System.Drawing.Size(100, 22);
-            this.cargoidTxt.TabIndex = 6;
-            // 
-            // fromTxt
-            // 
-            this.fromTxt.Location = new System.Drawing.Point(172, 66);
-            this.fromTxt.Name = "fromTxt";
-            this.fromTxt.Size = new System.Drawing.Size(268, 22);
-            this.fromTxt.TabIndex = 7;
-            // 
-            // toTxt
-            // 
-            this.toTxt.Location = new System.Drawing.Point(172, 97);
-            this.toTxt.Name = "toTxt";
-            this.toTxt.Size = new System.Drawing.Size(268, 22);
-            this.toTxt.TabIndex = 8;
-            // 
-            // cargomanidTxt
-            // 
-            this.cargomanidTxt.Location = new System.Drawing.Point(172, 129);
-            this.cargomanidTxt.Name = "cargomanidTxt";
-            this.cargomanidTxt.Size = new System.Drawing.Size(268, 22);
-            this.cargomanidTxt.TabIndex = 9;
-            // 
-            // cargomannameTxt
-            // 
-            this.cargomannameTxt.Location = new System.Drawing.Point(172, 166);
-            this.cargomannameTxt.Name = "cargomannameTxt";
-            this.cargomannameTxt.Size = new System.Drawing.Size(268, 22);
-            this.cargomannameTxt.TabIndex = 10;
-            // 
-            // cargofromnameTxt
-            // 
-            this.cargofromnameTxt.Location = new System.Drawing.Point(172, 206);
-            this.cargofromnameTxt.Name = "cargofromnameTxt";
-            this.cargofromnameTxt.Size = new System.Drawing.Size(268, 22);
-            this.cargofromnameTxt.TabIndex = 11;
-            // 
-            // addcargoBtn
-            // 
-            this.addcargoBtn.Location = new System.Drawing.Point(231, 245);
-            this.addcargoBtn.Name = "addcargoBtn";
-            this.addcargoBtn.Size = new System.Drawing.Size(75, 23);
-            this.addcargoBtn.TabIndex = 12;
-            this.addcargoBtn.Text = "Add";
-            this.addcargoBtn.UseVisualStyleBackColor = true;
+            this.removecargoBtn.Location = new System.Drawing.Point(286, 282);
+            this.removecargoBtn.Name = "removecargoBtn";
+            this.removecargoBtn.Size = new System.Drawing.Size(75, 23);
+            this.removecargoBtn.TabIndex = 14;
+            this.removecargoBtn.Text = "Remove";
+            this.removecargoBtn.UseVisualStyleBackColor = true;
             // 
             // searchcargoBtn
             // 
@@ -667,249 +798,110 @@
             this.searchcargoBtn.Text = "Search";
             this.searchcargoBtn.UseVisualStyleBackColor = true;
             // 
-            // removecargoBtn
+            // addcargoBtn
             // 
-            this.removecargoBtn.Location = new System.Drawing.Point(286, 282);
-            this.removecargoBtn.Name = "removecargoBtn";
-            this.removecargoBtn.Size = new System.Drawing.Size(75, 23);
-            this.removecargoBtn.TabIndex = 14;
-            this.removecargoBtn.Text = "Remove";
-            this.removecargoBtn.UseVisualStyleBackColor = true;
+            this.addcargoBtn.Location = new System.Drawing.Point(231, 245);
+            this.addcargoBtn.Name = "addcargoBtn";
+            this.addcargoBtn.Size = new System.Drawing.Size(75, 23);
+            this.addcargoBtn.TabIndex = 12;
+            this.addcargoBtn.Text = "Add";
+            this.addcargoBtn.UseVisualStyleBackColor = true;
             // 
-            // departureidLbl
+            // cargofromnameTxt
             // 
-            this.departureidLbl.AutoSize = true;
-            this.departureidLbl.Location = new System.Drawing.Point(16, 27);
-            this.departureidLbl.Name = "departureidLbl";
-            this.departureidLbl.Size = new System.Drawing.Size(89, 17);
-            this.departureidLbl.TabIndex = 0;
-            this.departureidLbl.Text = "Departure ID";
+            this.cargofromnameTxt.Location = new System.Drawing.Point(172, 206);
+            this.cargofromnameTxt.Name = "cargofromnameTxt";
+            this.cargofromnameTxt.Size = new System.Drawing.Size(268, 22);
+            this.cargofromnameTxt.TabIndex = 11;
             // 
-            // arrivalidLbl
+            // cargomannameTxt
             // 
-            this.arrivalidLbl.AutoSize = true;
-            this.arrivalidLbl.Location = new System.Drawing.Point(16, 63);
-            this.arrivalidLbl.Name = "arrivalidLbl";
-            this.arrivalidLbl.Size = new System.Drawing.Size(65, 17);
-            this.arrivalidLbl.TabIndex = 1;
-            this.arrivalidLbl.Text = "Arrival ID";
+            this.cargomannameTxt.Location = new System.Drawing.Point(172, 166);
+            this.cargomannameTxt.Name = "cargomannameTxt";
+            this.cargomannameTxt.Size = new System.Drawing.Size(268, 22);
+            this.cargomannameTxt.TabIndex = 10;
             // 
-            // acepilotnameLbl
+            // cargomanidTxt
             // 
-            this.acepilotnameLbl.AutoSize = true;
-            this.acepilotnameLbl.Location = new System.Drawing.Point(16, 102);
-            this.acepilotnameLbl.Name = "acepilotnameLbl";
-            this.acepilotnameLbl.Size = new System.Drawing.Size(104, 17);
-            this.acepilotnameLbl.TabIndex = 2;
-            this.acepilotnameLbl.Text = "Ace Pilot Name";
+            this.cargomanidTxt.Location = new System.Drawing.Point(172, 129);
+            this.cargomanidTxt.Name = "cargomanidTxt";
+            this.cargomanidTxt.Size = new System.Drawing.Size(268, 22);
+            this.cargomanidTxt.TabIndex = 9;
             // 
-            // acepilotidLbl
+            // toTxt
             // 
-            this.acepilotidLbl.AutoSize = true;
-            this.acepilotidLbl.Location = new System.Drawing.Point(16, 134);
-            this.acepilotidLbl.Name = "acepilotidLbl";
-            this.acepilotidLbl.Size = new System.Drawing.Size(80, 17);
-            this.acepilotidLbl.TabIndex = 3;
-            this.acepilotidLbl.Text = "Ace Pilot ID";
+            this.toTxt.Location = new System.Drawing.Point(172, 97);
+            this.toTxt.Name = "toTxt";
+            this.toTxt.Size = new System.Drawing.Size(268, 22);
+            this.toTxt.TabIndex = 8;
             // 
-            // secondarypilotnameLbl
+            // fromTxt
             // 
-            this.secondarypilotnameLbl.AutoSize = true;
-            this.secondarypilotnameLbl.Location = new System.Drawing.Point(16, 172);
-            this.secondarypilotnameLbl.Name = "secondarypilotnameLbl";
-            this.secondarypilotnameLbl.Size = new System.Drawing.Size(150, 17);
-            this.secondarypilotnameLbl.TabIndex = 4;
-            this.secondarypilotnameLbl.Text = "Secondary Pilot NAME";
+            this.fromTxt.Location = new System.Drawing.Point(172, 66);
+            this.fromTxt.Name = "fromTxt";
+            this.fromTxt.Size = new System.Drawing.Size(268, 22);
+            this.fromTxt.TabIndex = 7;
             // 
-            // secondarypilotidLbl
+            // cargoidTxt
             // 
-            this.secondarypilotidLbl.AutoSize = true;
-            this.secondarypilotidLbl.Location = new System.Drawing.Point(16, 209);
-            this.secondarypilotidLbl.Name = "secondarypilotidLbl";
-            this.secondarypilotidLbl.Size = new System.Drawing.Size(124, 17);
-            this.secondarypilotidLbl.TabIndex = 5;
-            this.secondarypilotidLbl.Text = "Secondary Pilot ID";
+            this.cargoidTxt.Location = new System.Drawing.Point(74, 284);
+            this.cargoidTxt.Name = "cargoidTxt";
+            this.cargoidTxt.Size = new System.Drawing.Size(100, 22);
+            this.cargoidTxt.TabIndex = 6;
             // 
-            // host3idLbl
+            // cargofromLbl
             // 
-            this.host3idLbl.AutoSize = true;
-            this.host3idLbl.Location = new System.Drawing.Point(265, 197);
-            this.host3idLbl.Name = "host3idLbl";
-            this.host3idLbl.Size = new System.Drawing.Size(121, 17);
-            this.host3idLbl.TabIndex = 6;
-            this.host3idLbl.Text = "Host/Hostess 3 ID";
+            this.cargofromLbl.AutoSize = true;
+            this.cargofromLbl.Location = new System.Drawing.Point(13, 209);
+            this.cargofromLbl.Name = "cargofromLbl";
+            this.cargofromLbl.Size = new System.Drawing.Size(131, 17);
+            this.cargofromLbl.TabIndex = 5;
+            this.cargofromLbl.Text = "Cargo From (name)";
             // 
-            // host3nameLbl
+            // cargomannameLbl
             // 
-            this.host3nameLbl.AutoSize = true;
-            this.host3nameLbl.Location = new System.Drawing.Point(265, 237);
-            this.host3nameLbl.Name = "host3nameLbl";
-            this.host3nameLbl.Size = new System.Drawing.Size(145, 17);
-            this.host3nameLbl.TabIndex = 7;
-            this.host3nameLbl.Text = "Host/Hostess 3 Name";
+            this.cargomannameLbl.AutoSize = true;
+            this.cargomannameLbl.Location = new System.Drawing.Point(24, 169);
+            this.cargomannameLbl.Name = "cargomannameLbl";
+            this.cargomannameLbl.Size = new System.Drawing.Size(118, 17);
+            this.cargomannameLbl.TabIndex = 4;
+            this.cargomannameLbl.Text = "Cargo man Name";
             // 
-            // host1idLbl
+            // cargomanidLbl
             // 
-            this.host1idLbl.AutoSize = true;
-            this.host1idLbl.Location = new System.Drawing.Point(266, 27);
-            this.host1idLbl.Name = "host1idLbl";
-            this.host1idLbl.Size = new System.Drawing.Size(121, 17);
-            this.host1idLbl.TabIndex = 8;
-            this.host1idLbl.Text = "Host/Hostess 1 ID";
+            this.cargomanidLbl.AutoSize = true;
+            this.cargomanidLbl.Location = new System.Drawing.Point(40, 132);
+            this.cargomanidLbl.Name = "cargomanidLbl";
+            this.cargomanidLbl.Size = new System.Drawing.Size(94, 17);
+            this.cargomanidLbl.TabIndex = 3;
+            this.cargomanidLbl.Text = "Cargo man ID";
             // 
-            // host1nameLbl
+            // toLbl
             // 
-            this.host1nameLbl.AutoSize = true;
-            this.host1nameLbl.Location = new System.Drawing.Point(266, 63);
-            this.host1nameLbl.Name = "host1nameLbl";
-            this.host1nameLbl.Size = new System.Drawing.Size(145, 17);
-            this.host1nameLbl.TabIndex = 9;
-            this.host1nameLbl.Text = "Host/Hostess 1 Name";
+            this.toLbl.AutoSize = true;
+            this.toLbl.Location = new System.Drawing.Point(109, 97);
+            this.toLbl.Name = "toLbl";
+            this.toLbl.Size = new System.Drawing.Size(25, 17);
+            this.toLbl.TabIndex = 2;
+            this.toLbl.Text = "To";
             // 
-            // host2idLbl
+            // fromLbl
             // 
-            this.host2idLbl.AutoSize = true;
-            this.host2idLbl.Location = new System.Drawing.Point(265, 105);
-            this.host2idLbl.Name = "host2idLbl";
-            this.host2idLbl.Size = new System.Drawing.Size(121, 17);
-            this.host2idLbl.TabIndex = 10;
-            this.host2idLbl.Text = "Host/Hostess 2 ID";
+            this.fromLbl.AutoSize = true;
+            this.fromLbl.Location = new System.Drawing.Point(94, 66);
+            this.fromLbl.Name = "fromLbl";
+            this.fromLbl.Size = new System.Drawing.Size(40, 17);
+            this.fromLbl.TabIndex = 1;
+            this.fromLbl.Text = "From";
             // 
-            // host2nameLbl
+            // cargoidLbl
             // 
-            this.host2nameLbl.AutoSize = true;
-            this.host2nameLbl.Location = new System.Drawing.Point(265, 154);
-            this.host2nameLbl.Name = "host2nameLbl";
-            this.host2nameLbl.Size = new System.Drawing.Size(145, 17);
-            this.host2nameLbl.TabIndex = 11;
-            this.host2nameLbl.Text = "Host/Hostess 2 Name";
-            // 
-            // flightidLbl
-            // 
-            this.flightidLbl.AutoSize = true;
-            this.flightidLbl.Location = new System.Drawing.Point(16, 332);
-            this.flightidLbl.Name = "flightidLbl";
-            this.flightidLbl.Size = new System.Drawing.Size(59, 17);
-            this.flightidLbl.TabIndex = 12;
-            this.flightidLbl.Text = "Flight ID";
-            // 
-            // departureidTxt
-            // 
-            this.departureidTxt.Location = new System.Drawing.Point(172, 24);
-            this.departureidTxt.Name = "departureidTxt";
-            this.departureidTxt.Size = new System.Drawing.Size(78, 22);
-            this.departureidTxt.TabIndex = 13;
-            // 
-            // arrivalidTxt
-            // 
-            this.arrivalidTxt.Location = new System.Drawing.Point(172, 60);
-            this.arrivalidTxt.Name = "arrivalidTxt";
-            this.arrivalidTxt.Size = new System.Drawing.Size(78, 22);
-            this.arrivalidTxt.TabIndex = 14;
-            // 
-            // acepilotnameTxt
-            // 
-            this.acepilotnameTxt.Location = new System.Drawing.Point(172, 97);
-            this.acepilotnameTxt.Name = "acepilotnameTxt";
-            this.acepilotnameTxt.Size = new System.Drawing.Size(78, 22);
-            this.acepilotnameTxt.TabIndex = 15;
-            // 
-            // acepilotidTxt
-            // 
-            this.acepilotidTxt.Location = new System.Drawing.Point(172, 129);
-            this.acepilotidTxt.Name = "acepilotidTxt";
-            this.acepilotidTxt.Size = new System.Drawing.Size(78, 22);
-            this.acepilotidTxt.TabIndex = 16;
-            // 
-            // secondarypilotnameTxt
-            // 
-            this.secondarypilotnameTxt.Location = new System.Drawing.Point(172, 167);
-            this.secondarypilotnameTxt.Name = "secondarypilotnameTxt";
-            this.secondarypilotnameTxt.Size = new System.Drawing.Size(78, 22);
-            this.secondarypilotnameTxt.TabIndex = 17;
-            // 
-            // secondarypilotidTxt
-            // 
-            this.secondarypilotidTxt.Location = new System.Drawing.Point(172, 209);
-            this.secondarypilotidTxt.Name = "secondarypilotidTxt";
-            this.secondarypilotidTxt.Size = new System.Drawing.Size(78, 22);
-            this.secondarypilotidTxt.TabIndex = 18;
-            // 
-            // host1idTxt
-            // 
-            this.host1idTxt.Location = new System.Drawing.Point(419, 24);
-            this.host1idTxt.Name = "host1idTxt";
-            this.host1idTxt.Size = new System.Drawing.Size(78, 22);
-            this.host1idTxt.TabIndex = 19;
-            // 
-            // host1nameTxt
-            // 
-            this.host1nameTxt.Location = new System.Drawing.Point(419, 63);
-            this.host1nameTxt.Name = "host1nameTxt";
-            this.host1nameTxt.Size = new System.Drawing.Size(78, 22);
-            this.host1nameTxt.TabIndex = 20;
-            // 
-            // host2idTxt
-            // 
-            this.host2idTxt.Location = new System.Drawing.Point(419, 102);
-            this.host2idTxt.Name = "host2idTxt";
-            this.host2idTxt.Size = new System.Drawing.Size(78, 22);
-            this.host2idTxt.TabIndex = 21;
-            // 
-            // host2nameTxt
-            // 
-            this.host2nameTxt.Location = new System.Drawing.Point(419, 149);
-            this.host2nameTxt.Name = "host2nameTxt";
-            this.host2nameTxt.Size = new System.Drawing.Size(78, 22);
-            this.host2nameTxt.TabIndex = 22;
-            // 
-            // host3idTxt
-            // 
-            this.host3idTxt.Location = new System.Drawing.Point(419, 190);
-            this.host3idTxt.Name = "host3idTxt";
-            this.host3idTxt.Size = new System.Drawing.Size(78, 22);
-            this.host3idTxt.TabIndex = 23;
-            // 
-            // host3nameTxt
-            // 
-            this.host3nameTxt.Location = new System.Drawing.Point(419, 234);
-            this.host3nameTxt.Name = "host3nameTxt";
-            this.host3nameTxt.Size = new System.Drawing.Size(78, 22);
-            this.host3nameTxt.TabIndex = 24;
-            // 
-            // flightidTxt
-            // 
-            this.flightidTxt.Location = new System.Drawing.Point(88, 329);
-            this.flightidTxt.Name = "flightidTxt";
-            this.flightidTxt.Size = new System.Drawing.Size(78, 22);
-            this.flightidTxt.TabIndex = 25;
-            // 
-            // searchflightBtn
-            // 
-            this.searchflightBtn.Location = new System.Drawing.Point(204, 329);
-            this.searchflightBtn.Name = "searchflightBtn";
-            this.searchflightBtn.Size = new System.Drawing.Size(75, 23);
-            this.searchflightBtn.TabIndex = 26;
-            this.searchflightBtn.Text = "Search";
-            this.searchflightBtn.UseVisualStyleBackColor = true;
-            // 
-            // addflightBtn
-            // 
-            this.addflightBtn.Location = new System.Drawing.Point(422, 309);
-            this.addflightBtn.Name = "addflightBtn";
-            this.addflightBtn.Size = new System.Drawing.Size(75, 23);
-            this.addflightBtn.TabIndex = 27;
-            this.addflightBtn.Text = "Add";
-            this.addflightBtn.UseVisualStyleBackColor = true;
-            // 
-            // removefligthBtn
-            // 
-            this.removefligthBtn.Location = new System.Drawing.Point(312, 309);
-            this.removefligthBtn.Name = "removefligthBtn";
-            this.removefligthBtn.Size = new System.Drawing.Size(75, 23);
-            this.removefligthBtn.TabIndex = 28;
-            this.removefligthBtn.Text = "Remove";
-            this.removefligthBtn.UseVisualStyleBackColor = true;
+            this.cargoidLbl.AutoSize = true;
+            this.cargoidLbl.Location = new System.Drawing.Point(13, 284);
+            this.cargoidLbl.Name = "cargoidLbl";
+            this.cargoidLbl.Size = new System.Drawing.Size(21, 17);
+            this.cargoidLbl.TabIndex = 0;
+            this.cargoidLbl.Text = "ID";
             // 
             // IndexGeneral
             // 
@@ -954,7 +946,6 @@
         private System.Windows.Forms.Button addBtn;
         private System.Windows.Forms.Button deleteBtn;
         private System.Windows.Forms.ComboBox typeCBox;
-        private System.Windows.Forms.Button updateBtn;
         private System.Windows.Forms.Button showBtn;
         private System.Windows.Forms.GroupBox securityGroup;
         private System.Windows.Forms.Label worktypeLbl;

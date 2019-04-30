@@ -12,17 +12,93 @@ namespace DAL4
 {
     public class Kontrol_Et
     {
-
-        /* Yapılacaklar ---
-         * Class'lara özel data tabloları oluşturulup buradaki "Görüntüle" metodu ona göre düzenlenecek.
-         * Ara yüz sorguları, eklemeler, güncellemeler eklenecek.*/
-
+        
 
         static string executable;
         static string path;
         static string connectionString;
         static SQLiteConnection conn;
         static SQLiteCommand cmd;
+        public static object sorguAdmin(int sorgu,int id,string fullname, string email, int type, int privilige)
+        {
+            try { 
+            DataTable dt = new DataTable();
+            conn.Open();
+            int x = 0;
+            if(sorgu==0)
+                cmd.CommandText = "Select Id,NAMEFULL,Email,EmployeeType,Privilige from users where ";
+            if (sorgu == 1)
+                cmd.CommandText = "delete from users where ";
+            if (sorgu == 2)
+                cmd.CommandText = "insert into users values ( ";
+
+            if (id != -1)
+            {
+                if (x == 0) {
+                    cmd.CommandText += "id ='" + id + "' "; x++; }
+                else { 
+                    if (sorgu == 2)
+                       cmd.CommandText += ",id ='" + id + "' ";
+                    else
+                       cmd.CommandText += "AND id ='" + id + "' ";
+                }
+            }
+            if (fullname != null)
+            {
+               
+                if (x == 0) {
+                    cmd.CommandText += "namefull ='" + fullname + "' "; x++; }
+                else { 
+                    if (sorgu == 2)
+                       cmd.CommandText += ",namefull ='" + fullname + "' ";
+                    else
+                       cmd.CommandText += "AND namefull ='" + fullname + "' ";
+                }
+            }
+            if (email != null)
+            {
+                cmd.CommandText += "email ='" + email+ "' ";x++;
+                if (x == 0) {
+                    cmd.CommandText += "email ='" + email + "' "; x++; }
+                else { 
+                    if (sorgu == 2)
+                       cmd.CommandText += ",email ='" + email + "' ";
+                    else
+                       cmd.CommandText += "AND email ='" + email + "' ";
+                }
+            }
+            if (type != -1)
+            {
+                
+                if (x == 0) {
+                    cmd.CommandText += "employeetype ='" + type + "' "; x++; }
+                else { 
+                    if (sorgu == 2)
+                       cmd.CommandText += ",employeetype ='" + type + "' ";
+                    else
+                       cmd.CommandText += "AND employeetype ='" + type + "' ";
+                }
+            }
+            if (privilige != -1)
+            {
+                
+                if (x == 0) {
+                    cmd.CommandText += "privilige ='" + privilige + "' "; x++; }
+                else { 
+                    if (sorgu == 2)
+                       cmd.CommandText += ",privilige ='" + privilige + "' ";
+                    else
+                       cmd.CommandText += "AND privilige ='" + privilige + "' ";
+                }
+            }
+            if (x == 0) cmd.CommandText = "Select Id,NAMEFULL,Email,EmployeeType,Privilige from users";
+            if (sorgu == 2) cmd.CommandText += ") ";
+            SQLiteDataAdapter da = new SQLiteDataAdapter(cmd);
+            da.Fill(dt);
+            return dt;
+            }
+            catch (Exception) { throw; }
+        }
         public static object görüntüle(Employee s)
         {
             DataTable dt = new DataTable();
@@ -56,7 +132,6 @@ namespace DAL4
         {
             try
             {
-                // IMPLEMENT TO ADD DATA BASE. AND RETURN THEM WITH PROPER VALUES. 
                 conn.Open();
                 cmd.CommandText = string.Format("Select * from Users where email='{0}'", email);
                 SQLiteDataReader reader = cmd.ExecuteReader();
