@@ -111,6 +111,7 @@
             this.toLbl = new System.Windows.Forms.Label();
             this.fromLbl = new System.Windows.Forms.Label();
             this.cargoidLbl = new System.Windows.Forms.Label();
+            this.deletesecurityBtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataView)).BeginInit();
             this.adminGroup.SuspendLayout();
             this.securityGroup.SuspendLayout();
@@ -310,6 +311,7 @@
             // 
             // securityGroup
             // 
+            this.securityGroup.Controls.Add(this.deletesecurityBtn);
             this.securityGroup.Controls.Add(this.priviligesecurityCBox);
             this.securityGroup.Controls.Add(this.priviligesecurityLbl);
             this.securityGroup.Controls.Add(this.worktypeLbl);
@@ -333,7 +335,7 @@
             this.securityGroup.Size = new System.Drawing.Size(470, 386);
             this.securityGroup.TabIndex = 8;
             this.securityGroup.TabStop = false;
-            this.securityGroup.Text = "Security Control";
+            this.securityGroup.Text = "Control";
             // 
             // priviligesecurityCBox
             // 
@@ -408,6 +410,7 @@
             this.showsecurityBtn.TabIndex = 27;
             this.showsecurityBtn.Text = "Show";
             this.showsecurityBtn.UseVisualStyleBackColor = true;
+            this.showsecurityBtn.Click += new System.EventHandler(this.showsecurityBtn_Click);
             // 
             // IDsecurityLbl
             // 
@@ -433,6 +436,7 @@
             this.addsecurityBtn.TabIndex = 19;
             this.addsecurityBtn.Text = "Add";
             this.addsecurityBtn.UseVisualStyleBackColor = true;
+            this.addsecurityBtn.Click += new System.EventHandler(this.addsecurityBtn_Click);
             // 
             // securitytypeCBox
             // 
@@ -529,6 +533,7 @@
             this.removefligthBtn.TabIndex = 28;
             this.removefligthBtn.Text = "Remove";
             this.removefligthBtn.UseVisualStyleBackColor = true;
+            this.removefligthBtn.Click += new System.EventHandler(this.removefligthBtn_Click);
             // 
             // addflightBtn
             // 
@@ -538,6 +543,7 @@
             this.addflightBtn.TabIndex = 27;
             this.addflightBtn.Text = "Add";
             this.addflightBtn.UseVisualStyleBackColor = true;
+            this.addflightBtn.Click += new System.EventHandler(this.addflightBtn_Click);
             // 
             // searchflightBtn
             // 
@@ -547,6 +553,7 @@
             this.searchflightBtn.TabIndex = 26;
             this.searchflightBtn.Text = "Search";
             this.searchflightBtn.UseVisualStyleBackColor = true;
+            this.searchflightBtn.Click += new System.EventHandler(this.searchflightBtn_Click);
             // 
             // flightidTxt
             // 
@@ -788,6 +795,7 @@
             this.removecargoBtn.TabIndex = 14;
             this.removecargoBtn.Text = "Remove";
             this.removecargoBtn.UseVisualStyleBackColor = true;
+            this.removecargoBtn.Click += new System.EventHandler(this.removecargoBtn_Click);
             // 
             // searchcargoBtn
             // 
@@ -797,6 +805,7 @@
             this.searchcargoBtn.TabIndex = 13;
             this.searchcargoBtn.Text = "Search";
             this.searchcargoBtn.UseVisualStyleBackColor = true;
+            this.searchcargoBtn.Click += new System.EventHandler(this.searchcargoBtn_Click);
             // 
             // addcargoBtn
             // 
@@ -806,6 +815,7 @@
             this.addcargoBtn.TabIndex = 12;
             this.addcargoBtn.Text = "Add";
             this.addcargoBtn.UseVisualStyleBackColor = true;
+            this.addcargoBtn.Click += new System.EventHandler(this.addcargoBtn_Click);
             // 
             // cargofromnameTxt
             // 
@@ -903,6 +913,16 @@
             this.cargoidLbl.TabIndex = 0;
             this.cargoidLbl.Text = "ID";
             // 
+            // deletesecurityBtn
+            // 
+            this.deletesecurityBtn.Location = new System.Drawing.Point(353, 284);
+            this.deletesecurityBtn.Name = "deletesecurityBtn";
+            this.deletesecurityBtn.Size = new System.Drawing.Size(75, 30);
+            this.deletesecurityBtn.TabIndex = 36;
+            this.deletesecurityBtn.Text = "Delete";
+            this.deletesecurityBtn.UseVisualStyleBackColor = true;
+            this.deletesecurityBtn.Click += new System.EventHandler(this.deletesecurityBtn_Click);
+            // 
             // IndexGeneral
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -910,10 +930,10 @@
             this.ClientSize = new System.Drawing.Size(1149, 532);
             this.Controls.Add(this.logoutBtn);
             this.Controls.Add(this.dataView);
-            this.Controls.Add(this.adminGroup);
             this.Controls.Add(this.securityGroup);
             this.Controls.Add(this.cargoGroup);
             this.Controls.Add(this.traficGroup);
+            this.Controls.Add(this.adminGroup);
             this.Name = "IndexGeneral";
             this.Text = "IndexGeneral";
             ((System.ComponentModel.ISupportInitialize)(this.dataView)).EndInit();
@@ -1014,5 +1034,6 @@
         private System.Windows.Forms.Label arrivalidLbl;
         private System.Windows.Forms.Label departureidLbl;
         private System.Windows.Forms.Button removecargoBtn;
+        private System.Windows.Forms.Button deletesecurityBtn;
     }
 }
