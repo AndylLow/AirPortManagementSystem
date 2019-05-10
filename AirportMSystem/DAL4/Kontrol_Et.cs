@@ -753,7 +753,7 @@ namespace DAL4
                     cmd.CommandText = "delete from users where ";
                 if (sorgu == 2)
                     cmd.CommandText = "insert into users values ( ";
-                if(sorgu == 2 && id==-1) cmd.CommandText = "insert into users (namefull,email,employeetype,privilige) values ( ";
+                if(sorgu == 2 && id==-1) cmd.CommandText = "insert into users (namefull,password,email,employeetype,privilige) values ( ";
 
 
 

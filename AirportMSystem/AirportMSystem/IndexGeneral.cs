@@ -8,6 +8,11 @@ namespace AirportMSystem
     public partial class IndexGeneral : Form
     {
         public static Employee a;
+        ~IndexGeneral()
+        {
+            this.Close();
+            
+        }
         public IndexGeneral(Employee s)
         {
             a = s;
@@ -77,7 +82,8 @@ namespace AirportMSystem
         {
             Login yeni = new Login();
             yeni.Show();
-            this.Hide();
+            this.Close();
+            GC.Collect();
         }
 
         private void addBtn_Click(object sender, EventArgs e)
@@ -108,7 +114,6 @@ namespace AirportMSystem
             }
             catch (Exception)
             {
-
                 MessageBox.Show("Deletion failed");
             }
             
@@ -131,8 +136,17 @@ namespace AirportMSystem
             if (securitytypeCBox.SelectedIndex != -1) deger = 0;
             if (idsecurityTxt.Text != "") 
               x = int.Parse(idsecurityTxt.Text);
-            dataView.DataSource = Kontrol_Et.sorguSecurity(deger,2, x, namesecurityTxt.Text, emailsecurityTxt.Text, securitytypeCBox.SelectedIndex, priviligesecurityCBox.SelectedIndex, workplaceTxt.Text, worktimeTxt.Text, worktypeTxt.Text,a);
-            dataView.Update();
+            try
+            {
+                dataView.DataSource = Kontrol_Et.sorguSecurity(deger,2, x, namesecurityTxt.Text, emailsecurityTxt.Text, securitytypeCBox.SelectedIndex, priviligesecurityCBox.SelectedIndex, workplaceTxt.Text, worktimeTxt.Text, worktypeTxt.Text,a);
+                dataView.Update();
+                MessageBox.Show("Added succesfully");
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Failed to insert to database");
+            }
+            
         }
 
         private void deletesecurityBtn_Click(object sender, EventArgs e)
@@ -143,8 +157,17 @@ namespace AirportMSystem
             if (securitytypeCBox.SelectedIndex != -1) deger = 0;
             if (idsecurityTxt.Text != "")
                 x = int.Parse(idsecurityTxt.Text);
-            dataView.DataSource = Kontrol_Et.sorguSecurity(deger, 1, x, namesecurityTxt.Text, emailsecurityTxt.Text, securitytypeCBox.SelectedIndex, priviligesecurityCBox.SelectedIndex, workplaceTxt.Text, worktimeTxt.Text, worktypeTxt.Text, a);
-            dataView.Update();
+            
+            try
+            {
+                dataView.DataSource = Kontrol_Et.sorguSecurity(deger, 1, x, namesecurityTxt.Text, emailsecurityTxt.Text, securitytypeCBox.SelectedIndex, priviligesecurityCBox.SelectedIndex, workplaceTxt.Text, worktimeTxt.Text, worktypeTxt.Text, a);
+                dataView.Update();
+                MessageBox.Show("Deletion Succesfull");
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Deletion failed");
+            }
         }
 
         private void showsecurityBtn_Click(object sender, EventArgs e)
@@ -165,8 +188,17 @@ namespace AirportMSystem
 
             if (cargoidTxt.Text != "")
                 x = int.Parse(cargoidTxt.Text);
-            dataView.DataSource = Kontrol_Et.sorguCargo(2, x, fromTxt.Text , toTxt.Text, cargomannameTxt.Text, cargomanidTxt.Text,cargofromnameTxt.Text);
-            dataView.Update();
+            
+            try
+            {
+                dataView.DataSource = Kontrol_Et.sorguCargo(2, x, fromTxt.Text , toTxt.Text, cargomannameTxt.Text, cargomanidTxt.Text,cargofromnameTxt.Text);
+                dataView.Update();
+                MessageBox.Show("Added succesfully");
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Failed to insert to database");
+            }
         }
 
         private void searchcargoBtn_Click(object sender, EventArgs e)
@@ -185,8 +217,17 @@ namespace AirportMSystem
 
             if (cargoidTxt.Text != "")
                 x = int.Parse(cargoidTxt.Text);
-            dataView.DataSource = Kontrol_Et.sorguCargo(1, x, fromTxt.Text, toTxt.Text, cargomannameTxt.Text, cargomanidTxt.Text, cargofromnameTxt.Text);
-            dataView.Update();
+            
+            try
+            {
+                dataView.DataSource = Kontrol_Et.sorguCargo(1, x, fromTxt.Text, toTxt.Text, cargomannameTxt.Text, cargomanidTxt.Text, cargofromnameTxt.Text);
+                dataView.Update();
+                MessageBox.Show("Deletion Succesfull");
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Deletion failed");
+            }
         }
 
         private void searchflightBtn_Click(object sender, EventArgs e)
@@ -205,8 +246,17 @@ namespace AirportMSystem
 
             if (flightidTxt.Text != "")
                 x = int.Parse(flightidTxt.Text);
-            dataView.DataSource = Kontrol_Et.sorguFlight(1, x, departureidTxt.Text, arrivalidTxt.Text, acepilotnameTxt.Text, acepilotidTxt.Text, secondarypilotnameTxt.Text,secondarypilotidTxt.Text,host1nameTxt.Text,host1idTxt.Text,host2nameTxt.Text, host2idTxt.Text, host3nameTxt.Text, host3idTxt.Text);
-            dataView.Update();
+           
+            try
+            {
+                 dataView.DataSource = Kontrol_Et.sorguFlight(1, x, departureidTxt.Text, arrivalidTxt.Text, acepilotnameTxt.Text, acepilotidTxt.Text, secondarypilotnameTxt.Text,secondarypilotidTxt.Text,host1nameTxt.Text,host1idTxt.Text,host2nameTxt.Text, host2idTxt.Text, host3nameTxt.Text, host3idTxt.Text);
+                 dataView.Update();
+                MessageBox.Show("Deletion Succesfull");
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Deletion failed");
+            }
         }
 
         private void addflightBtn_Click(object sender, EventArgs e)
@@ -215,8 +265,17 @@ namespace AirportMSystem
 
             if (flightidTxt.Text != "")
                 x = int.Parse(flightidTxt.Text);
-            dataView.DataSource = Kontrol_Et.sorguFlight(2, x, departureidTxt.Text, arrivalidTxt.Text, acepilotnameTxt.Text, acepilotidTxt.Text, secondarypilotnameTxt.Text, secondarypilotidTxt.Text, host1nameTxt.Text, host1idTxt.Text, host2nameTxt.Text, host2idTxt.Text, host3nameTxt.Text, host3idTxt.Text);
-            dataView.Update();
+            try
+            {
+                dataView.DataSource = Kontrol_Et.sorguFlight(2, x, departureidTxt.Text, arrivalidTxt.Text, acepilotnameTxt.Text, acepilotidTxt.Text, secondarypilotnameTxt.Text, secondarypilotidTxt.Text, host1nameTxt.Text, host1idTxt.Text, host2nameTxt.Text, host2idTxt.Text, host3nameTxt.Text, host3idTxt.Text);
+                dataView.Update();
+                MessageBox.Show("Added succesfully");
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Failed to insert to database");
+            }
+
         }
     }
 }

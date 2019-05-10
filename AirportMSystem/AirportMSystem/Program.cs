@@ -19,7 +19,9 @@ namespace AirportMSystem
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Kontrol_Et.initiliaze();
-            Application.Run(new Login());
+            Login login = new Login();
+            login.Show();
+            Application.Run();
         }
     }
 }

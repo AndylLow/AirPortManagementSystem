@@ -19,15 +19,19 @@ namespace AirportMSystem
         {
             InitializeComponent();
         }
+        ~Login()
+        {
+            this.Close();
+        }
         private void girisBtn_Click(object sender, EventArgs e)
         {
 
             if (Kontrol_Et.checkUser(emailTxt.Text, passwordTxt.Text))
             {
-                
                 IndexGeneral yeni = new IndexGeneral(Kontrol_Et.GetEmployee(emailTxt.Text));
                 yeni.Show();
-                this.Hide();
+                this.Close();
+                GC.Collect();
             }
             else
                 MessageBox.Show("No Match Found");
